@@ -1,0 +1,5162 @@
+{
+  "name": "time_series_demo",
+  "id": "time_series_demo",
+  "description": "",
+  "created_on": "02/02/2023, 12:18:07",
+  "last_modify": "02/02/2023, 16:40:59",
+  "graphs": {
+    "Manage TS": {
+      "nodes": [
+        {
+          "id": "c61de535-b6fc-4142-b4e7-7a4c0d51bfea",
+          "position": {
+            "x": 597.9983800967688,
+            "y": 165.1420114963827
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 239,
+          "height": 104,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "name": "Trigger",
+            "events": null,
+            "description": "### Description\nThe TRIGGER component is used to start streams.\n\n### Output\nThe parameter Type can be set as a **String** or an **Object**. The parameter Value, on the other hand, defines the actual output of the component.",
+            "inputs": [],
+            "outputs": [
+              {
+                "id": "output",
+                "label": "output"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Common",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "type",
+                  "type": "select",
+                  "description": "The type of data",
+                  "label": "Type",
+                  "validation": {
+                    "required": "Required field"
+                  },
+                  "fragment": null,
+                  "advanced": false,
+                  "options": [
+                    "String",
+                    "Object"
+                  ],
+                  "value": null
+                },
+                {
+                  "name": "value",
+                  "type": "dynamic",
+                  "dynamicType": {
+                    "String": "area",
+                    "Object": "code"
+                  },
+                  "parent": "type",
+                  "label": "Value",
+                  "validation": {
+                    "required": "Required field"
+                  }
+                }
+              ],
+              "click": "Send message",
+              "icon": "RiPlayFill",
+              "values": {
+                "comment": "",
+                "alias": "Create Pred \"example\"",
+                "debug": false,
+                "type": "String",
+                "value": "Hello world!"
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": 597.9983800967688,
+            "y": 165.1420114963827
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "661361df-2019-4b29-a1da-5d30234f08b4",
+          "position": {
+            "x": 373.5047164619619,
+            "y": 271.5073814522968
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 281,
+          "height": 104,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "name": "Trigger",
+            "events": null,
+            "description": "### Description\nThe TRIGGER component is used to start streams.\n\n### Output\nThe parameter Type can be set as a **String** or an **Object**. The parameter Value, on the other hand, defines the actual output of the component.",
+            "inputs": [],
+            "outputs": [
+              {
+                "id": "output",
+                "label": "output"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Common",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "type",
+                  "type": "select",
+                  "description": "The type of data",
+                  "label": "Type",
+                  "validation": {
+                    "required": "Required field"
+                  },
+                  "fragment": null,
+                  "advanced": false,
+                  "options": [
+                    "String",
+                    "Object"
+                  ],
+                  "value": null
+                },
+                {
+                  "name": "value",
+                  "type": "dynamic",
+                  "dynamicType": {
+                    "String": "area",
+                    "Object": "code"
+                  },
+                  "parent": "type",
+                  "label": "Value",
+                  "validation": {
+                    "required": "Required field"
+                  }
+                }
+              ],
+              "click": "Send message",
+              "icon": "RiPlayFill",
+              "values": {
+                "comment": "",
+                "alias": "Del Pred \"example\"",
+                "debug": false,
+                "type": "String",
+                "value": "Hello world!"
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": 373.5047164619619,
+            "y": 271.5073814522968
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "af6e12fa-6652-4e0d-8545-7a5a1725a89d",
+          "position": {
+            "x": 613.5956879319826,
+            "y": 352.578686122459
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 214,
+          "height": 104,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "name": "Trigger",
+            "events": null,
+            "description": "### Description\nThe TRIGGER component is used to start streams.\n\n### Output\nThe parameter Type can be set as a **String** or an **Object**. The parameter Value, on the other hand, defines the actual output of the component.",
+            "inputs": [],
+            "outputs": [
+              {
+                "id": "output",
+                "label": "output"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Common",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "type",
+                  "type": "select",
+                  "description": "The type of data",
+                  "label": "Type",
+                  "validation": {
+                    "required": "Required field"
+                  },
+                  "fragment": null,
+                  "advanced": false,
+                  "options": [
+                    "String",
+                    "Object"
+                  ],
+                  "value": null
+                },
+                {
+                  "name": "value",
+                  "type": "dynamic",
+                  "dynamicType": {
+                    "String": "area",
+                    "Object": "code"
+                  },
+                  "parent": "type",
+                  "label": "Value",
+                  "validation": {
+                    "required": "Required field"
+                  }
+                }
+              ],
+              "click": "Send message",
+              "icon": "RiPlayFill",
+              "values": {
+                "comment": "",
+                "alias": "Info Pred \"example\"",
+                "debug": false,
+                "type": "String",
+                "value": "Hello world!"
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": 613.5956879319826,
+            "y": 352.578686122459
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "6497267d-f7ed-45c1-940f-12894b077f33",
+          "position": {
+            "x": 333.5047164619619,
+            "y": 125.14201149638271
+          },
+          "type": "comment",
+          "dragHandle": "#commentHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 932.3964958214938,
+          "height": 371.4366746260763,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "comment": "Gestione TimeSeries",
+            "fill": "#90BE6D",
+            "height": 371.4366746260763,
+            "width": 932.3964958214938
+          },
+          "zIndex": -1,
+          "selectable": false,
+          "connectable": false,
+          "__class__": "Node"
+        },
+        {
+          "id": "eebd5775-b013-4fa8-9b27-49bced8d95c1",
+          "position": {
+            "x": 959,
+            "y": 255
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 150,
+          "height": 56,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "name": "TimeSeries Manager",
+            "events": null,
+            "description": "Components that managaes Time Series Models",
+            "inputs": [
+              {
+                "id": "create",
+                "label": "create_predictor",
+                "service": "loko-services/create_predictor",
+                "to": "create"
+              },
+              {
+                "id": "delete",
+                "label": "delete_predictor",
+                "service": "loko-services/delete_objs",
+                "to": "delete"
+              },
+              {
+                "id": "info",
+                "label": "info_predictor",
+                "service": "loko-services/info_obj",
+                "to": "info"
+              }
+            ],
+            "outputs": [
+              {
+                "id": "create",
+                "label": "create_predictor"
+              },
+              {
+                "id": "delete",
+                "label": "delete_predictor"
+              },
+              {
+                "id": "info",
+                "label": "info_predictor"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Custom",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "predictor_name",
+                  "type": "text",
+                  "label": "Predictor",
+                  "helper": "Choose the name you want to use for your predictor",
+                  "group": "Create Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "description",
+                  "type": "area",
+                  "label": "Description",
+                  "helper": "Add a description for your predictor, if you want",
+                  "group": "Create Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "existing_transf",
+                  "type": "boolean",
+                  "label": "Use existing transformer",
+                  "helper": "",
+                  "group": "Create Parameters",
+                  "value": "true",
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "transformer_id",
+                  "type": "dynamic",
+                  "label": "Transformer",
+                  "helper": "",
+                  "group": "Create Parameters",
+                  "value": null,
+                  "description": "Express the name of the transformer you want to use",
+                  "validation": null,
+                  "parent": "existing_transf",
+                  "condition": "{parent}===true",
+                  "dynamicType": "asyncSelect",
+                  "options": null,
+                  "fields": null,
+                  "url": "http://localhost:9999/routes/loko-time-series/transformers"
+                },
+                {
+                  "name": "transformer_bp",
+                  "type": "dynamic",
+                  "label": "Transformer",
+                  "helper": "",
+                  "group": "Create Parameters",
+                  "value": null,
+                  "description": "Define the structure of the transformer you want to use",
+                  "validation": null,
+                  "parent": "existing_transf",
+                  "condition": "{parent}===false",
+                  "dynamicType": "area",
+                  "options": null,
+                  "fields": null,
+                  "url": null
+                },
+                {
+                  "name": "existing_model",
+                  "type": "boolean",
+                  "label": "Use existing model",
+                  "helper": "",
+                  "group": "Create Parameters",
+                  "value": "false",
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "model_id",
+                  "type": "dynamic",
+                  "label": "Model",
+                  "helper": "",
+                  "group": "Create Parameters",
+                  "value": null,
+                  "description": "Express the name of the model you want to use",
+                  "validation": null,
+                  "parent": "existing_model",
+                  "condition": "{parent}===true",
+                  "dynamicType": "asyncSelect",
+                  "options": null,
+                  "fields": null,
+                  "url": "http://localhost:9999/routes/loko-time-series/models"
+                },
+                {
+                  "name": "model_bp",
+                  "type": "dynamic",
+                  "label": "Model",
+                  "helper": "",
+                  "group": "Create Parameters",
+                  "value": null,
+                  "description": "Define the structure of the model you want to use",
+                  "validation": null,
+                  "parent": "existing_model",
+                  "condition": "{parent}===false",
+                  "dynamicType": "area",
+                  "options": null,
+                  "fields": null,
+                  "url": null
+                },
+                {
+                  "name": "del_transformer",
+                  "type": "asyncSelect",
+                  "label": "Transformer",
+                  "helper": "",
+                  "group": "Delete Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null,
+                  "url": "http://localhost:9999/routes/loko-time-series/transformers"
+                },
+                {
+                  "name": "del_model",
+                  "type": "asyncSelect",
+                  "label": "Model",
+                  "helper": "",
+                  "group": "Delete Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null,
+                  "url": "http://localhost:9999/routes/loko-time-series/models"
+                },
+                {
+                  "name": "del_predictor",
+                  "type": "asyncSelect",
+                  "label": "Predictor",
+                  "helper": "",
+                  "group": "Delete Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null,
+                  "url": "http://localhost:9999/routes/loko-time-series/predictors"
+                },
+                {
+                  "name": "info_obj",
+                  "type": "select",
+                  "label": "Object",
+                  "helper": "Select the object you want to have info on.",
+                  "group": "Info Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null,
+                  "options": [
+                    "Predictor",
+                    "Transformer",
+                    "Model"
+                  ]
+                },
+                {
+                  "name": "info_obj_name",
+                  "type": "dynamic",
+                  "label": "Predictor",
+                  "helper": "",
+                  "group": "Info Parameters",
+                  "value": null,
+                  "description": "Select the name of the predictor you want to know about",
+                  "validation": null,
+                  "parent": "info_obj",
+                  "condition": "{parent}===\"Predictor\"",
+                  "dynamicType": "asyncSelect",
+                  "options": null,
+                  "fields": null,
+                  "url": "http://localhost:9999/routes/loko-time-series/predictors"
+                },
+                {
+                  "name": "info_obj_name",
+                  "type": "dynamic",
+                  "label": "Model",
+                  "helper": "",
+                  "group": "Info Parameters",
+                  "value": null,
+                  "description": "Select the name of the model you want to know about",
+                  "validation": null,
+                  "parent": "info_obj",
+                  "condition": "{parent}===\"Model\"",
+                  "dynamicType": "asyncSelect",
+                  "options": null,
+                  "fields": null,
+                  "url": "http://localhost:9999/routes/loko-time-series/models"
+                },
+                {
+                  "name": "info_obj_name",
+                  "type": "dynamic",
+                  "label": "Transformer",
+                  "helper": "",
+                  "group": "Info Parameters",
+                  "value": null,
+                  "description": "Select the name of the transformer you want to know about",
+                  "validation": null,
+                  "parent": "info_obj",
+                  "condition": "{parent}===\"Transformer\"",
+                  "dynamicType": "asyncSelect",
+                  "options": null,
+                  "fields": null,
+                  "url": "http://localhost:9999/routes/loko-time-series/transformers"
+                }
+              ],
+              "click": null,
+              "icon": "RiFileSettingsFill",
+              "values": {
+                "comment": "",
+                "alias": "",
+                "debug": true,
+                "predictor_name": "example_model_ts",
+                "description": "Example of ARIMA Model",
+                "existing_transf": false,
+                "existing_model": false,
+                "info_obj": "Predictor",
+                "model_bp": "{\"__klass__\": \"sktime.forecasting.naive.NaiveForecaster\", \"strategy\": \"mean\"}",
+                "del_transformer": "example",
+                "del_model": "example_model",
+                "del_predictor": "",
+                "transformer_bp": "{\n  \"__klass__\": \"sktime.transformations.compose.TransformerPipeline\",\n  \"steps\": [\n    {\n      \"__klass__\": \"sktime.transformations.series.exponent.ExponentTransformer\",\n      \"power\": 2\n    }\n  ]\n}",
+                "info_obj_name": "delhi_temperature"
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": 959,
+            "y": 255
+          },
+          "__class__": "Node"
+        }
+      ],
+      "edges": [
+        {
+          "id": "reactflow__edge-c61de535-b6fc-4142-b4e7-7a4c0d51bfeaoutput-eebd5775-b013-4fa8-9b27-49bced8d95c1create",
+          "source": "c61de535-b6fc-4142-b4e7-7a4c0d51bfea",
+          "sourceHandle": "output",
+          "target": "eebd5775-b013-4fa8-9b27-49bced8d95c1",
+          "targetHandle": "create",
+          "data": {
+            "startColor": "#D770AD",
+            "stopColor": "#888"
+          },
+          "selected": false,
+          "dragging": false,
+          "__class__": "Edge"
+        },
+        {
+          "id": "reactflow__edge-661361df-2019-4b29-a1da-5d30234f08b4output-eebd5775-b013-4fa8-9b27-49bced8d95c1delete",
+          "source": "661361df-2019-4b29-a1da-5d30234f08b4",
+          "sourceHandle": "output",
+          "target": "eebd5775-b013-4fa8-9b27-49bced8d95c1",
+          "targetHandle": "delete",
+          "data": {
+            "startColor": "#D770AD",
+            "stopColor": "#888"
+          },
+          "selected": false,
+          "dragging": false,
+          "__class__": "Edge"
+        },
+        {
+          "id": "reactflow__edge-af6e12fa-6652-4e0d-8545-7a5a1725a89doutput-eebd5775-b013-4fa8-9b27-49bced8d95c1info",
+          "source": "af6e12fa-6652-4e0d-8545-7a5a1725a89d",
+          "sourceHandle": "output",
+          "target": "eebd5775-b013-4fa8-9b27-49bced8d95c1",
+          "targetHandle": "info",
+          "data": {
+            "startColor": "#D770AD",
+            "stopColor": "#888"
+          },
+          "selected": false,
+          "dragging": false,
+          "__class__": "Edge"
+        }
+      ],
+      "__class__": "Graph"
+    },
+    "TimeSeriesForecasting": {
+      "nodes": [
+        {
+          "id": "0bca8ca4-b3e6-4caf-9cf4-63a9c7e98c87",
+          "position": {
+            "x": 365.0188948219426,
+            "y": 111.4902087028936
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 189,
+          "height": 104,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "name": "Trigger",
+            "events": null,
+            "description": "### Description\nThe TRIGGER component is used to start streams.\n\n### Output\nThe parameter Type can be set as a **String** or an **Object**. The parameter Value, on the other hand, defines the actual output of the component.",
+            "inputs": [],
+            "outputs": [
+              {
+                "id": "output",
+                "label": "output"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Common",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "type",
+                  "type": "select",
+                  "description": "The type of data",
+                  "label": "Type",
+                  "validation": {
+                    "required": "Required field"
+                  },
+                  "fragment": null,
+                  "advanced": false,
+                  "options": [
+                    "String",
+                    "Object"
+                  ],
+                  "value": null
+                },
+                {
+                  "name": "value",
+                  "type": "dynamic",
+                  "dynamicType": {
+                    "String": "area",
+                    "Object": "code"
+                  },
+                  "parent": "type",
+                  "label": "Value",
+                  "validation": {
+                    "required": "Required field"
+                  }
+                }
+              ],
+              "click": "Send message",
+              "icon": "RiPlayFill",
+              "values": {
+                "comment": "",
+                "alias": "Trainining Data",
+                "debug": false,
+                "type": "Object",
+                "value": "{\"data\":[{\"Date_Time\": \"01/03/2010  08:20:40\" },\n                {\"Date_Time\": \"01/10/2010  08:20:40\"},\n                {\"Date_Time\": \"01/17/2010  08:20:40\"},\n                {\"Date_Time\": \"01/24/2010  08:20:40\"},\n                {\"Date_Time\": \"01/31/2010  08:20:40\"},\n                {\"Date_Time\": \"02/07/2010  08:20:40\"},\n                {\"Date_Time\": \"02/14/2010  08:20:40\"},\n                {\"Date_Time\": \"02/21/2010  08:20:40\"},\n                {\"Date_Time\": \"02/28/2010  08:20:40\"},\n                {\"Date_Time\": \"03/07/2010  08:20:40\"},\n                {\"Date_Time\": \"03/14/2010  08:20:40\"},\n                {\"Date_Time\": \"03/21/2010  08:20:40\"}],\n \"target\":[1509634,1581344, 1614204, 1897725, 1759063, 1320022, 1559063, 1659063, 1859063, 1551083, 1819012, 1801029]}\n"
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": 365.0188948219426,
+            "y": 111.4902087028936
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "91686445-c9f3-494c-89a6-2398581b74de",
+          "position": {
+            "x": 425.04462199642444,
+            "y": 233.7709715417306
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 150,
+          "height": 56,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "name": "Trigger",
+            "events": null,
+            "description": "### Description\nThe TRIGGER component is used to start streams.\n\n### Output\nThe parameter Type can be set as a **String** or an **Object**. The parameter Value, on the other hand, defines the actual output of the component.",
+            "inputs": [],
+            "outputs": [
+              {
+                "id": "output",
+                "label": "output"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Common",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "type",
+                  "type": "select",
+                  "description": "The type of data",
+                  "label": "Type",
+                  "validation": {
+                    "required": "Required field"
+                  },
+                  "fragment": null,
+                  "advanced": false,
+                  "options": [
+                    "String",
+                    "Object"
+                  ],
+                  "value": null
+                },
+                {
+                  "name": "value",
+                  "type": "dynamic",
+                  "dynamicType": {
+                    "String": "area",
+                    "Object": "code"
+                  },
+                  "parent": "type",
+                  "label": "Value",
+                  "validation": {
+                    "required": "Required field"
+                  }
+                }
+              ],
+              "click": "Send message",
+              "icon": "RiPlayFill",
+              "values": {
+                "comment": "",
+                "alias": "No-data",
+                "debug": false,
+                "type": "String",
+                "value": "Hello world!"
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": 425.04462199642444,
+            "y": 233.7709715417306
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "ad26db46-19a2-4bb2-96bd-6d3b47f04bed",
+          "position": {
+            "x": 345.6007087964208,
+            "y": 356.4486196363259
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 150,
+          "height": 56,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "name": "Trigger",
+            "events": null,
+            "description": "### Description\nThe TRIGGER component is used to start streams.\n\n### Output\nThe parameter Type can be set as a **String** or an **Object**. The parameter Value, on the other hand, defines the actual output of the component.",
+            "inputs": [],
+            "outputs": [
+              {
+                "id": "output",
+                "label": "output"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Common",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "type",
+                  "type": "select",
+                  "description": "The type of data",
+                  "label": "Type",
+                  "validation": {
+                    "required": "Required field"
+                  },
+                  "fragment": null,
+                  "advanced": false,
+                  "options": [
+                    "String",
+                    "Object"
+                  ],
+                  "value": null
+                },
+                {
+                  "name": "value",
+                  "type": "dynamic",
+                  "dynamicType": {
+                    "String": "area",
+                    "Object": "code"
+                  },
+                  "parent": "type",
+                  "label": "Value",
+                  "validation": {
+                    "required": "Required field"
+                  }
+                }
+              ],
+              "click": "Send message",
+              "icon": "RiPlayFill",
+              "values": {
+                "comment": "",
+                "alias": "Evaluate Data",
+                "debug": false,
+                "type": "Object",
+                "value": "{\n  \"data\": [\n    {\"Date_Time\": \"03/28/2010\"},\n    {\"Date_Time\": \"04/04/2010\"}\n  ],\n  \"target\": [\n    1509634,\n     1959063\n  ]\n}\n"
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": 345.6007087964208,
+            "y": 356.4486196363259
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "259ed685-05e5-4a2f-bda7-acdf8a268e6b",
+          "position": {
+            "x": 286,
+            "y": 60.4902087028936
+          },
+          "type": "comment",
+          "dragHandle": "#commentHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 669,
+          "height": 431.9584109334323,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "comment": "Train, Predict, Evaluate Time-Series model without covariates",
+            "fill": "#277DA1",
+            "height": 431.9584109334323,
+            "width": 669
+          },
+          "zIndex": -1,
+          "selectable": false,
+          "connectable": false,
+          "__class__": "Node"
+        },
+        {
+          "id": "9e74149f-3313-496c-a50f-4801dfcec065",
+          "position": {
+            "x": 1112.5384574481698,
+            "y": 116.65883488033234
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 189,
+          "height": 104,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "name": "Trigger",
+            "events": null,
+            "description": "### Description\nThe TRIGGER component is used to start streams.\n\n### Output\nThe parameter Type can be set as a **String** or an **Object**. The parameter Value, on the other hand, defines the actual output of the component.",
+            "inputs": [],
+            "outputs": [
+              {
+                "id": "output",
+                "label": "output"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Common",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "type",
+                  "type": "select",
+                  "description": "The type of data",
+                  "label": "Type",
+                  "validation": {
+                    "required": "Required field"
+                  },
+                  "fragment": null,
+                  "advanced": false,
+                  "options": [
+                    "String",
+                    "Object"
+                  ],
+                  "value": null
+                },
+                {
+                  "name": "value",
+                  "type": "dynamic",
+                  "dynamicType": {
+                    "String": "area",
+                    "Object": "code"
+                  },
+                  "parent": "type",
+                  "label": "Value",
+                  "validation": {
+                    "required": "Required field"
+                  }
+                }
+              ],
+              "click": "Send message",
+              "icon": "RiPlayFill",
+              "values": {
+                "comment": "",
+                "alias": "Trainining Data",
+                "debug": false,
+                "type": "Object",
+                "value": "{\"data\":[{\"Date_Time\": \"01/03/2010  08:00:20\", \"f1\":1.2 , \"f2\":11.2 },\n       {\"Date_Time\": \"01/10/2010  08:00:20\", \"f1\":1.28, \"f2\":12.2},\n       {\"Date_Time\": \"01/17/2010  08:00:20\", \"f1\":1.35, \"f2\":22.8},\n       {\"Date_Time\": \"01/24/2010  09:00:20\", \"f1\": 2.7, \"f2\":105.6},\n       {\"Date_Time\": \"01/31/2010  08:20:40\", \"f1\": 2.5, \"f2\":108},\n      {\"Date_Time\": \"02/07/2010  08:20:40\", \"f1\": 0.3, \"f2\":1},\n      {\"Date_Time\": \"02/14/2010  08:20:40\", \"f1\": 0.9, \"f2\":20},\n      {\"Date_Time\": \"02/21/2010  08:20:40\", \"f1\": 1.4, \"f2\":62},\n      {\"Date_Time\": \"02/28/2010  08:20:40\", \"f1\":2.6, \"f2\":1234.2},\n      {\"Date_Time\": \"03/07/2010  08:20:40\", \"f1\":1.1, \"f2\":121.2},\n      {\"Date_Time\": \"03/14/2010  08:20:40\", \"f1\":2.45, \"f2\":180.2},\n      {\"Date_Time\": \"03/21/2010  08:20:40\", \"f1\": 2.8, \"f2\":111.2}],\n     \"target\":[1509634,1581344, 1614204, 1897725, 1759063,1320022, 1559063, 1659063, 1859063, 1551083, 1819012, 1801029]}\n"
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": 1112.5384574481698,
+            "y": 116.65883488033234
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "70718dbc-eab3-4eaa-a744-56fd252c4dc9",
+          "position": {
+            "x": 1174.5583414506173,
+            "y": 249.27427059791074
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 150,
+          "height": 88,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "name": "Trigger",
+            "events": null,
+            "description": "### Description\nThe TRIGGER component is used to start streams.\n\n### Output\nThe parameter Type can be set as a **String** or an **Object**. The parameter Value, on the other hand, defines the actual output of the component.",
+            "inputs": [],
+            "outputs": [
+              {
+                "id": "output",
+                "label": "output"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Common",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "type",
+                  "type": "select",
+                  "description": "The type of data",
+                  "label": "Type",
+                  "validation": {
+                    "required": "Required field"
+                  },
+                  "fragment": null,
+                  "advanced": false,
+                  "options": [
+                    "String",
+                    "Object"
+                  ],
+                  "value": null
+                },
+                {
+                  "name": "value",
+                  "type": "dynamic",
+                  "dynamicType": {
+                    "String": "area",
+                    "Object": "code"
+                  },
+                  "parent": "type",
+                  "label": "Value",
+                  "validation": {
+                    "required": "Required field"
+                  }
+                }
+              ],
+              "click": "Send message",
+              "icon": "RiPlayFill",
+              "values": {
+                "comment": "",
+                "alias": "covariates data",
+                "debug": false,
+                "type": "Object",
+                "value": "{\n  \"data\": [\n    {\"Date_Time\": \"03/28/2010\", \"f1\":1.2 , \"f2\":11.2 },\n    {\"Date_Time\": \"04/04/2010\", \"f1\":1.6, \"f2\":12.2 }\n  ]\n}\n"
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": 1174.5583414506173,
+            "y": 249.27427059791074
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "e41778b7-f8a5-4edf-bf15-b1746f876637",
+          "position": {
+            "x": 1135.1202714226483,
+            "y": 362.9072966960817
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 172,
+          "height": 104,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "name": "Trigger",
+            "events": null,
+            "description": "### Description\nThe TRIGGER component is used to start streams.\n\n### Output\nThe parameter Type can be set as a **String** or an **Object**. The parameter Value, on the other hand, defines the actual output of the component.",
+            "inputs": [],
+            "outputs": [
+              {
+                "id": "output",
+                "label": "output"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Common",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "type",
+                  "type": "select",
+                  "description": "The type of data",
+                  "label": "Type",
+                  "validation": {
+                    "required": "Required field"
+                  },
+                  "fragment": null,
+                  "advanced": false,
+                  "options": [
+                    "String",
+                    "Object"
+                  ],
+                  "value": null
+                },
+                {
+                  "name": "value",
+                  "type": "dynamic",
+                  "dynamicType": {
+                    "String": "area",
+                    "Object": "code"
+                  },
+                  "parent": "type",
+                  "label": "Value",
+                  "validation": {
+                    "required": "Required field"
+                  }
+                }
+              ],
+              "click": "Send message",
+              "icon": "RiPlayFill",
+              "values": {
+                "comment": "",
+                "alias": "Evaluate Data",
+                "debug": false,
+                "type": "Object",
+                "value": "{\n  \"data\": [\n    {\"Date_Time\": \"03/28/2010\", \"f1\":1.2 , \"f2\":11.2 },\n    {\"Date_Time\": \"04/04/2010\", \"f1\":1.6, \"f2\":12.2 }\n  ],\n  \"target\": [\n     1509634,\n     1959063\n  ]\n}"
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": 1135.1202714226483,
+            "y": 362.9072966960817
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "d79a9fee-d008-4acd-9dda-b4fa28bf2674",
+          "position": {
+            "x": 1060.9279995073161,
+            "y": 58.59812252789311
+          },
+          "type": "comment",
+          "dragHandle": "#commentHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 666.9811051780575,
+          "height": 428.9584109334323,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "comment": "Train, Predict, Evaluate Time-Series model with covariates",
+            "fill": "#4D908E",
+            "height": 428.9584109334323,
+            "width": 666.9811051780575
+          },
+          "zIndex": -1,
+          "selectable": false,
+          "connectable": false,
+          "positionAbsolute": {
+            "x": 1060.9279995073161,
+            "y": 58.59812252789311
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "4833c6d2-9809-4624-b994-c1989fcdfe97",
+          "position": {
+            "x": 748,
+            "y": 257
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 150,
+          "height": 56,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "name": "TimeSeries",
+            "events": null,
+            "description": "###TimeSeries components",
+            "inputs": [
+              {
+                "id": "fit",
+                "label": "fit",
+                "service": "loko-services/predictors/fit",
+                "to": "fit"
+              },
+              {
+                "id": "predict",
+                "label": "predict",
+                "service": "loko-services/predictors/predict",
+                "to": "predict"
+              },
+              {
+                "id": "evaluate",
+                "label": "evaluate",
+                "service": "loko-services/predictors/evaluate",
+                "to": "evaluate"
+              }
+            ],
+            "outputs": [
+              {
+                "id": "fit",
+                "label": "fit"
+              },
+              {
+                "id": "predict",
+                "label": "predict"
+              },
+              {
+                "id": "evaluate",
+                "label": "evaluate"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Custom",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "predictor_name",
+                  "type": "asyncSelect",
+                  "label": "Predictor Name",
+                  "helper": "Select the name of the predictor you want to use",
+                  "group": "",
+                  "value": null,
+                  "description": "",
+                  "validation": {
+                    "required": "Required field"
+                  },
+                  "url": "http://localhost:9999/routes/loko-time-series/predictors"
+                },
+                {
+                  "name": "datetime_feature",
+                  "type": "text",
+                  "label": "Datetime Feature",
+                  "helper": "Name of the feature to use as date-time reference",
+                  "group": "Fit Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "datetime_frequency",
+                  "type": "text",
+                  "label": "Datetime Frequency",
+                  "helper": "Time frequence required for the model ",
+                  "group": "Fit Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "forecasting_horizon_fit",
+                  "type": "number",
+                  "label": "Forecasting Horizon",
+                  "helper": "",
+                  "group": "Fit Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "report",
+                  "type": "boolean",
+                  "label": "Compute metrics report",
+                  "helper": "",
+                  "group": "Fit Parameters",
+                  "value": "false",
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "test_size",
+                  "type": "dynamic",
+                  "label": "Test Size",
+                  "helper": "",
+                  "group": "Fit Parameters",
+                  "value": 30,
+                  "description": "",
+                  "validation": null,
+                  "parent": "report",
+                  "condition": "{parent}===true",
+                  "dynamicType": "number",
+                  "options": null,
+                  "fields": null,
+                  "url": null
+                },
+                {
+                  "name": "forecasting_horizon",
+                  "type": "number",
+                  "label": "Forecasting Horizon",
+                  "helper": "",
+                  "group": "Predict Parameters",
+                  "value": 1,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "save_eval_report",
+                  "type": "boolean",
+                  "label": "Save metrics report",
+                  "helper": "",
+                  "group": "Evaluate parameters",
+                  "value": false,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "eval_fname",
+                  "type": "dynamic",
+                  "label": "Evaluation file name",
+                  "helper": "",
+                  "group": "Evaluate parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null,
+                  "parent": "save_eval_report",
+                  "condition": "{parent}===true",
+                  "dynamicType": "text",
+                  "options": null,
+                  "fields": null,
+                  "url": null
+                }
+              ],
+              "click": null,
+              "icon": "RiFundsBoxFill",
+              "values": {
+                "comment": "",
+                "alias": "",
+                "debug": true,
+                "datetime_feature": "Date_Time",
+                "datetime_frequency": "7d",
+                "forecasting_horizon_fit": "",
+                "report": true,
+                "forecasting_horizon": "2",
+                "save_eval_report": true,
+                "eval_fname": "tseval",
+                "predictor_name": "example_model_ts",
+                "test_size": "0.2"
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": 748,
+            "y": 257
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "0195ae5e-5f45-4bcc-aa5a-e7fd9eb01aad",
+          "position": {
+            "x": 1532.5075232253844,
+            "y": 252.64906047281147
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 150,
+          "height": 56,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "name": "TimeSeries",
+            "events": null,
+            "description": "###TimeSeries components",
+            "inputs": [
+              {
+                "id": "fit",
+                "label": "fit",
+                "service": "loko-services/predictors/fit",
+                "to": "fit"
+              },
+              {
+                "id": "predict",
+                "label": "predict",
+                "service": "loko-services/predictors/predict",
+                "to": "predict"
+              },
+              {
+                "id": "evaluate",
+                "label": "evaluate",
+                "service": "loko-services/predictors/evaluate",
+                "to": "evaluate"
+              }
+            ],
+            "outputs": [
+              {
+                "id": "fit",
+                "label": "fit"
+              },
+              {
+                "id": "predict",
+                "label": "predict"
+              },
+              {
+                "id": "evaluate",
+                "label": "evaluate"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Custom",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "predictor_name",
+                  "type": "asyncSelect",
+                  "label": "Predictor Name",
+                  "helper": "Select the name of the predictor you want to use",
+                  "group": "",
+                  "value": null,
+                  "description": "",
+                  "validation": {
+                    "required": "Required field"
+                  },
+                  "url": "http://localhost:9999/routes/loko-time-series/predictors"
+                },
+                {
+                  "name": "datetime_feature",
+                  "type": "text",
+                  "label": "Datetime Feature",
+                  "helper": "Name of the feature to use as date-time reference",
+                  "group": "Fit Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "datetime_frequency",
+                  "type": "text",
+                  "label": "Datetime Frequency",
+                  "helper": "Time frequence required for the model ",
+                  "group": "Fit Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "forecasting_horizon_fit",
+                  "type": "number",
+                  "label": "Forecasting Horizon",
+                  "helper": "",
+                  "group": "Fit Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "report",
+                  "type": "boolean",
+                  "label": "Compute metrics report",
+                  "helper": "",
+                  "group": "Fit Parameters",
+                  "value": "false",
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "test_size",
+                  "type": "dynamic",
+                  "label": "Test Size",
+                  "helper": "",
+                  "group": "Fit Parameters",
+                  "value": 30,
+                  "description": "",
+                  "validation": null,
+                  "parent": "report",
+                  "condition": "{parent}===true",
+                  "dynamicType": "number",
+                  "options": null,
+                  "fields": null,
+                  "url": null
+                },
+                {
+                  "name": "forecasting_horizon",
+                  "type": "number",
+                  "label": "Forecasting Horizon",
+                  "helper": "",
+                  "group": "Predict Parameters",
+                  "value": 1,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "save_eval_report",
+                  "type": "boolean",
+                  "label": "Save metrics report",
+                  "helper": "",
+                  "group": "Evaluate parameters",
+                  "value": false,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "eval_fname",
+                  "type": "dynamic",
+                  "label": "Evaluation file name",
+                  "helper": "",
+                  "group": "Evaluate parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null,
+                  "parent": "save_eval_report",
+                  "condition": "{parent}===true",
+                  "dynamicType": "text",
+                  "options": null,
+                  "fields": null,
+                  "url": null
+                }
+              ],
+              "click": null,
+              "icon": "RiFundsBoxFill",
+              "values": {
+                "comment": "",
+                "alias": "",
+                "debug": true,
+                "datetime_feature": "Date_Time",
+                "datetime_frequency": "7d",
+                "forecasting_horizon_fit": "",
+                "report": true,
+                "forecasting_horizon": "2",
+                "save_eval_report": false,
+                "test_size": "0.1",
+                "predictor_name": "example_model"
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": 1532.5075232253844,
+            "y": 252.64906047281147
+          },
+          "__class__": "Node"
+        }
+      ],
+      "edges": [
+        {
+          "id": "reactflow__edge-0bca8ca4-b3e6-4caf-9cf4-63a9c7e98c87output-4833c6d2-9809-4624-b994-c1989fcdfe97fit",
+          "source": "0bca8ca4-b3e6-4caf-9cf4-63a9c7e98c87",
+          "sourceHandle": "output",
+          "target": "4833c6d2-9809-4624-b994-c1989fcdfe97",
+          "targetHandle": "fit",
+          "data": {
+            "startColor": "#D770AD",
+            "stopColor": "#888"
+          },
+          "selected": false,
+          "dragging": false,
+          "__class__": "Edge"
+        },
+        {
+          "id": "reactflow__edge-91686445-c9f3-494c-89a6-2398581b74deoutput-4833c6d2-9809-4624-b994-c1989fcdfe97predict",
+          "source": "91686445-c9f3-494c-89a6-2398581b74de",
+          "sourceHandle": "output",
+          "target": "4833c6d2-9809-4624-b994-c1989fcdfe97",
+          "targetHandle": "predict",
+          "data": {
+            "startColor": "#D770AD",
+            "stopColor": "#888"
+          },
+          "selected": false,
+          "dragging": false,
+          "__class__": "Edge"
+        },
+        {
+          "id": "reactflow__edge-ad26db46-19a2-4bb2-96bd-6d3b47f04bedoutput-4833c6d2-9809-4624-b994-c1989fcdfe97evaluate",
+          "source": "ad26db46-19a2-4bb2-96bd-6d3b47f04bed",
+          "sourceHandle": "output",
+          "target": "4833c6d2-9809-4624-b994-c1989fcdfe97",
+          "targetHandle": "evaluate",
+          "data": {
+            "startColor": "#D770AD",
+            "stopColor": "#888"
+          },
+          "selected": false,
+          "dragging": false,
+          "__class__": "Edge"
+        },
+        {
+          "id": "reactflow__edge-9e74149f-3313-496c-a50f-4801dfcec065output-0195ae5e-5f45-4bcc-aa5a-e7fd9eb01aadfit",
+          "source": "9e74149f-3313-496c-a50f-4801dfcec065",
+          "sourceHandle": "output",
+          "target": "0195ae5e-5f45-4bcc-aa5a-e7fd9eb01aad",
+          "targetHandle": "fit",
+          "data": {
+            "startColor": "#D770AD",
+            "stopColor": "#888"
+          },
+          "selected": false,
+          "dragging": false,
+          "__class__": "Edge"
+        },
+        {
+          "id": "reactflow__edge-70718dbc-eab3-4eaa-a744-56fd252c4dc9output-0195ae5e-5f45-4bcc-aa5a-e7fd9eb01aadpredict",
+          "source": "70718dbc-eab3-4eaa-a744-56fd252c4dc9",
+          "sourceHandle": "output",
+          "target": "0195ae5e-5f45-4bcc-aa5a-e7fd9eb01aad",
+          "targetHandle": "predict",
+          "data": {
+            "startColor": "#D770AD",
+            "stopColor": "#888"
+          },
+          "selected": false,
+          "dragging": false,
+          "__class__": "Edge"
+        },
+        {
+          "id": "reactflow__edge-e41778b7-f8a5-4edf-bf15-b1746f876637output-0195ae5e-5f45-4bcc-aa5a-e7fd9eb01aadevaluate",
+          "source": "e41778b7-f8a5-4edf-bf15-b1746f876637",
+          "sourceHandle": "output",
+          "target": "0195ae5e-5f45-4bcc-aa5a-e7fd9eb01aad",
+          "targetHandle": "evaluate",
+          "data": {
+            "startColor": "#D770AD",
+            "stopColor": "#888"
+          },
+          "selected": false,
+          "dragging": false,
+          "__class__": "Edge"
+        }
+      ],
+      "__class__": "Graph"
+    },
+    "ClimateTSexample": {
+      "nodes": [
+        {
+          "id": "5539790d-ce77-48b9-9376-c57d8214655d",
+          "position": {
+            "x": -55.88010730273436,
+            "y": 246.29745296657808
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 150,
+          "height": 56,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "name": "CSV Reader",
+            "events": null,
+            "description": "### Description\nThe CSV READER component allows reading files in csv format. \n\nYou have the possibility to set a separator using the **Separator** parameter. The **Infer types** parameter allows the automatic transformation of the type of non-textual fields.\n\n### Input\nThe input required by this component is the file path in PosixPath format. However, the file path can also be defined when the component is created, in which case no input is required.\n\n### Output\nThe submitted file is returned row by row, where each row is represented by a dictionary that has the column names as keys.",
+            "inputs": [
+              {
+                "id": "input",
+                "label": "input"
+              }
+            ],
+            "outputs": [
+              {
+                "id": "output",
+                "label": "output"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Inputs",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "value",
+                  "type": "files",
+                  "label": "File",
+                  "fragment": "files",
+                  "helper": "choose a file or read input"
+                },
+                {
+                  "name": "separator",
+                  "type": "text",
+                  "label": "Separator"
+                },
+                {
+                  "name": "df",
+                  "type": "boolean",
+                  "label": "Dask Dataframe"
+                },
+                {
+                  "name": "infer_type",
+                  "type": "boolean",
+                  "label": "Infer types"
+                },
+                {
+                  "name": "propagate",
+                  "type": "boolean",
+                  "label": "Flush at the end"
+                }
+              ],
+              "click": "Send file",
+              "icon": "RiFileChart2Fill",
+              "values": {
+                "comment": "",
+                "alias": "",
+                "debug": false,
+                "separator": ",",
+                "df": false,
+                "infer_type": true,
+                "propagate": true,
+                "value": {
+                  "name": "DailyDelhiClimateTest.csv",
+                  "path": "data/data/ts_datasets/DailyDelhiClimateTest.csv",
+                  "parent": "data/data/ts_datasets",
+                  "isDir": false,
+                  "hidden": false
+                }
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": -55.88010730273436,
+            "y": 246.29745296657808
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "48b91ff4-c5f4-47e0-8331-5927697d6b36",
+          "position": {
+            "x": 251.23605734806728,
+            "y": 254.23619580424298
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 150,
+          "height": 56,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "name": "Grouper",
+            "events": null,
+            "description": "### Description\nThe GROUPER component is used to group the elements received in input. The items will be returned in batches with a maximum size equal to **Group size**.\n\n### Input\nIn this case there is no fixed input format.\n\n### Output\nIn output lists of elements received in input with a maximum length equal to **Group size**.",
+            "inputs": [
+              {
+                "id": "input",
+                "label": "input"
+              }
+            ],
+            "outputs": [
+              {
+                "id": "output",
+                "label": "output"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Common",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "n",
+                  "label": "Group size",
+                  "type": "number"
+                }
+              ],
+              "click": null,
+              "icon": "RiGroupFill",
+              "values": {
+                "comment": "",
+                "alias": "",
+                "debug": false,
+                "n": "10000"
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": 251.23605734806728,
+            "y": 254.23619580424298
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "651c50b4-424f-4514-85a2-45de84788ce6",
+          "position": {
+            "x": -80.49466271641182,
+            "y": 201.96765463627213
+          },
+          "type": "comment",
+          "dragHandle": "#commentHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 838.2655518890567,
+          "height": 165,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "comment": "Saving test dataset",
+            "fill": "#277DA1",
+            "height": 165,
+            "width": 838.2655518890567
+          },
+          "zIndex": -1,
+          "selectable": false,
+          "connectable": false,
+          "positionAbsolute": {
+            "x": -80.49466271641182,
+            "y": 201.96765463627213
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "21545f82-3de3-4e33-90f9-223e3b400dd2",
+          "position": {
+            "x": -55.687367620049486,
+            "y": -74.43508466262895
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 150,
+          "height": 56,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "name": "CSV Reader",
+            "events": null,
+            "description": "### Description\nThe CSV READER component allows reading files in csv format. \n\nYou have the possibility to set a separator using the **Separator** parameter. The **Infer types** parameter allows the automatic transformation of the type of non-textual fields.\n\n### Input\nThe input required by this component is the file path in PosixPath format. However, the file path can also be defined when the component is created, in which case no input is required.\n\n### Output\nThe submitted file is returned row by row, where each row is represented by a dictionary that has the column names as keys.",
+            "inputs": [
+              {
+                "id": "input",
+                "label": "input"
+              }
+            ],
+            "outputs": [
+              {
+                "id": "output",
+                "label": "output"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Inputs",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "value",
+                  "type": "files",
+                  "label": "File",
+                  "fragment": "files",
+                  "helper": "choose a file or read input"
+                },
+                {
+                  "name": "separator",
+                  "type": "text",
+                  "label": "Separator"
+                },
+                {
+                  "name": "df",
+                  "type": "boolean",
+                  "label": "Dask Dataframe"
+                },
+                {
+                  "name": "infer_type",
+                  "type": "boolean",
+                  "label": "Infer types"
+                },
+                {
+                  "name": "propagate",
+                  "type": "boolean",
+                  "label": "Flush at the end"
+                }
+              ],
+              "click": "Send file",
+              "icon": "RiFileChart2Fill",
+              "values": {
+                "comment": "",
+                "alias": "",
+                "debug": false,
+                "separator": ",",
+                "df": false,
+                "infer_type": true,
+                "propagate": true,
+                "value": {
+                  "name": "DailyDelhiClimateTrain.csv",
+                  "path": "data/data/ts_datasets/DailyDelhiClimateTrain.csv",
+                  "parent": "data/data/ts_datasets",
+                  "isDir": false,
+                  "hidden": false
+                }
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": -55.687367620049486,
+            "y": -74.43508466262895
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "adf2e5ec-8e67-414d-9c2e-5c104f0713ce",
+          "position": {
+            "x": 240.3697509697122,
+            "y": -56.287403795870574
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 150,
+          "height": 56,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "name": "Grouper",
+            "events": null,
+            "description": "### Description\nThe GROUPER component is used to group the elements received in input. The items will be returned in batches with a maximum size equal to **Group size**.\n\n### Input\nIn this case there is no fixed input format.\n\n### Output\nIn output lists of elements received in input with a maximum length equal to **Group size**.",
+            "inputs": [
+              {
+                "id": "input",
+                "label": "input"
+              }
+            ],
+            "outputs": [
+              {
+                "id": "output",
+                "label": "output"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Common",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "n",
+                  "label": "Group size",
+                  "type": "number"
+                }
+              ],
+              "click": null,
+              "icon": "RiGroupFill",
+              "values": {
+                "comment": "",
+                "alias": "",
+                "debug": false,
+                "n": "1000000"
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": 240.3697509697122,
+            "y": -56.287403795870574
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "e6aab882-5e40-4e3b-ad29-4acda4be9d6f",
+          "position": {
+            "x": -83.49868849735418,
+            "y": -113.11995118352041
+          },
+          "type": "comment",
+          "dragHandle": "#commentHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 839.0662157681772,
+          "height": 182,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "comment": "Save train dataset",
+            "fill": "#577590",
+            "height": 182,
+            "width": 839.0662157681772
+          },
+          "zIndex": -1,
+          "selectable": false,
+          "connectable": false,
+          "positionAbsolute": {
+            "x": -83.49868849735418,
+            "y": -113.11995118352041
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "c65ac347-862f-4ce4-8e67-094949fb5bea",
+          "position": {
+            "x": 2132.1624428810937,
+            "y": -54.62167706485476
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 150,
+          "height": 56,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "name": "Trigger",
+            "events": null,
+            "description": "### Description\nThe TRIGGER component is used to start streams.\n\n### Output\nThe parameter Type can be set as a **String** or an **Object**. The parameter Value, on the other hand, defines the actual output of the component.",
+            "inputs": [],
+            "outputs": [
+              {
+                "id": "output",
+                "label": "output"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Common",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "type",
+                  "type": "select",
+                  "description": "The type of data",
+                  "label": "Type",
+                  "validation": {
+                    "required": "Required field"
+                  },
+                  "fragment": null,
+                  "advanced": false,
+                  "options": [
+                    "String",
+                    "Object"
+                  ],
+                  "value": null
+                },
+                {
+                  "name": "value",
+                  "type": "dynamic",
+                  "dynamicType": {
+                    "String": "area",
+                    "Object": "code"
+                  },
+                  "parent": "type",
+                  "label": "Value",
+                  "validation": {
+                    "required": "Required field"
+                  }
+                }
+              ],
+              "click": "Send message",
+              "icon": "RiPlayFill",
+              "values": {
+                "comment": "",
+                "alias": "",
+                "debug": false,
+                "type": "String",
+                "value": "Hello world!"
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": 2132.1624428810937,
+            "y": -54.62167706485476
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "5cb19524-2b17-41a4-a8b6-49c8e0a51716",
+          "position": {
+            "x": 3056.134490712639,
+            "y": -32.28298122356765
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 150,
+          "height": 60,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "name": "TimeSeries",
+            "events": null,
+            "description": "###TimeSeries components",
+            "inputs": [
+              {
+                "id": "fit",
+                "label": "fit",
+                "service": "loko-services/predictors/fit",
+                "to": "fit",
+                "closed": false
+              },
+              {
+                "id": "predict",
+                "label": "predict",
+                "service": "loko-services/predictors/predict",
+                "to": "predict"
+              },
+              {
+                "id": "evaluate",
+                "label": "evaluate",
+                "service": "loko-services/predictors/evaluate",
+                "to": "evaluate"
+              }
+            ],
+            "outputs": [
+              {
+                "id": "fit",
+                "label": "fit"
+              },
+              {
+                "id": "predict",
+                "label": "predict"
+              },
+              {
+                "id": "evaluate",
+                "label": "evaluate"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Custom",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "predictor_name",
+                  "type": "asyncSelect",
+                  "label": "Predictor Name",
+                  "helper": "Select the name of the predictor you want to use",
+                  "group": "",
+                  "value": null,
+                  "description": "",
+                  "validation": {
+                    "required": "Required field"
+                  },
+                  "url": "http://localhost:9999/routes/loko-time-series/predictors"
+                },
+                {
+                  "name": "datetime_feature",
+                  "type": "text",
+                  "label": "Datetime Feature",
+                  "helper": "Name of the feature to use as date-time reference",
+                  "group": "Fit Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "datetime_frequency",
+                  "type": "text",
+                  "label": "Datetime Frequency",
+                  "helper": "Time frequence required for the model ",
+                  "group": "Fit Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "forecasting_horizon_fit",
+                  "type": "number",
+                  "label": "Forecasting Horizon",
+                  "helper": "",
+                  "group": "Fit Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "report",
+                  "type": "boolean",
+                  "label": "Compute metrics report",
+                  "helper": "",
+                  "group": "Fit Parameters",
+                  "value": "false",
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "test_size",
+                  "type": "dynamic",
+                  "label": "Test Size",
+                  "helper": "",
+                  "group": "Fit Parameters",
+                  "value": 30,
+                  "description": "",
+                  "validation": null,
+                  "parent": "report",
+                  "condition": "{parent}===true",
+                  "dynamicType": "number",
+                  "options": null,
+                  "fields": null,
+                  "url": null
+                },
+                {
+                  "name": "forecasting_horizon",
+                  "type": "number",
+                  "label": "Forecasting Horizon",
+                  "helper": "",
+                  "group": "Predict Parameters",
+                  "value": 1,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "save_eval_report",
+                  "type": "boolean",
+                  "label": "Save metrics report",
+                  "helper": "",
+                  "group": "Evaluate parameters",
+                  "value": false,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "eval_fname",
+                  "type": "dynamic",
+                  "label": "Evaluation file name",
+                  "helper": "",
+                  "group": "Evaluate parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null,
+                  "parent": "save_eval_report",
+                  "condition": "{parent}===true",
+                  "dynamicType": "text",
+                  "options": null,
+                  "fields": null,
+                  "url": null
+                }
+              ],
+              "click": null,
+              "icon": "RiFundsBoxFill",
+              "values": {
+                "comment": "",
+                "alias": "Training TS Model",
+                "debug": true,
+                "datetime_feature": "time",
+                "datetime_frequency": "d",
+                "forecasting_horizon_fit": "3",
+                "report": true,
+                "forecasting_horizon": "1",
+                "save_eval_report": false,
+                "test_size": "0.2",
+                "predictor_name": "delhi_temperature"
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": 3056.134490712639,
+            "y": -32.28298122356765
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "ea98981c-639a-4ac1-9daf-a0f9c0cf5f1c",
+          "position": {
+            "x": 1465,
+            "y": 128
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 150,
+          "height": 56,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "name": "TimeSeries Manager",
+            "events": null,
+            "description": "Components that managaes Time Series Models",
+            "inputs": [
+              {
+                "id": "create",
+                "label": "create_predictor",
+                "service": "loko-services/create_predictor",
+                "to": "create"
+              },
+              {
+                "id": "delete",
+                "label": "delete_predictor",
+                "service": "loko-services/delete_objs",
+                "to": "delete"
+              },
+              {
+                "id": "info",
+                "label": "info_predictor",
+                "service": "loko-services/info_obj",
+                "to": "info"
+              }
+            ],
+            "outputs": [
+              {
+                "id": "create",
+                "label": "create_predictor"
+              },
+              {
+                "id": "delete",
+                "label": "delete_predictor"
+              },
+              {
+                "id": "info",
+                "label": "info_predictor"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Custom",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "predictor_name",
+                  "type": "text",
+                  "label": "Predictor",
+                  "helper": "Choose the name you want to use for your predictor",
+                  "group": "Create Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "description",
+                  "type": "area",
+                  "label": "Description",
+                  "helper": "Add a description for your predictor, if you want",
+                  "group": "Create Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "existing_transf",
+                  "type": "boolean",
+                  "label": "Use existing transformer",
+                  "helper": "",
+                  "group": "Create Parameters",
+                  "value": "true",
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "transformer_id",
+                  "type": "dynamic",
+                  "label": "Transformer",
+                  "helper": "",
+                  "group": "Create Parameters",
+                  "value": null,
+                  "description": "Express the name of the transformer you want to use",
+                  "validation": null,
+                  "parent": "existing_transf",
+                  "condition": "{parent}===true",
+                  "dynamicType": "asyncSelect",
+                  "options": null,
+                  "fields": null,
+                  "url": "http://localhost:9999/routes/loko-time-series/transformers"
+                },
+                {
+                  "name": "transformer_bp",
+                  "type": "dynamic",
+                  "label": "Transformer",
+                  "helper": "",
+                  "group": "Create Parameters",
+                  "value": null,
+                  "description": "Define the structure of the transformer you want to use",
+                  "validation": null,
+                  "parent": "existing_transf",
+                  "condition": "{parent}===false",
+                  "dynamicType": "area",
+                  "options": null,
+                  "fields": null,
+                  "url": null
+                },
+                {
+                  "name": "existing_model",
+                  "type": "boolean",
+                  "label": "Use existing model",
+                  "helper": "",
+                  "group": "Create Parameters",
+                  "value": "false",
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "model_id",
+                  "type": "dynamic",
+                  "label": "Model",
+                  "helper": "",
+                  "group": "Create Parameters",
+                  "value": null,
+                  "description": "Express the name of the model you want to use",
+                  "validation": null,
+                  "parent": "existing_model",
+                  "condition": "{parent}===true",
+                  "dynamicType": "asyncSelect",
+                  "options": null,
+                  "fields": null,
+                  "url": "http://localhost:9999/routes/loko-time-series/models"
+                },
+                {
+                  "name": "model_bp",
+                  "type": "dynamic",
+                  "label": "Model",
+                  "helper": "",
+                  "group": "Create Parameters",
+                  "value": null,
+                  "description": "Define the structure of the model you want to use",
+                  "validation": null,
+                  "parent": "existing_model",
+                  "condition": "{parent}===false",
+                  "dynamicType": "area",
+                  "options": null,
+                  "fields": null,
+                  "url": null
+                },
+                {
+                  "name": "del_transformer",
+                  "type": "asyncSelect",
+                  "label": "Transformer",
+                  "helper": "",
+                  "group": "Delete Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null,
+                  "url": "http://localhost:9999/routes/loko-time-series/transformers"
+                },
+                {
+                  "name": "del_model",
+                  "type": "asyncSelect",
+                  "label": "Model",
+                  "helper": "",
+                  "group": "Delete Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null,
+                  "url": "http://localhost:9999/routes/loko-time-series/models"
+                },
+                {
+                  "name": "del_predictor",
+                  "type": "asyncSelect",
+                  "label": "Predictor",
+                  "helper": "",
+                  "group": "Delete Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null,
+                  "url": "http://localhost:9999/routes/loko-time-series/predictors"
+                },
+                {
+                  "name": "info_obj",
+                  "type": "select",
+                  "label": "Object",
+                  "helper": "Select the object you want to have info on.",
+                  "group": "Info Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null,
+                  "options": [
+                    "Predictor",
+                    "Transformer",
+                    "Model"
+                  ]
+                },
+                {
+                  "name": "info_obj_name",
+                  "type": "dynamic",
+                  "label": "Predictor",
+                  "helper": "",
+                  "group": "Info Parameters",
+                  "value": null,
+                  "description": "Select the name of the predictor you want to know about",
+                  "validation": null,
+                  "parent": "info_obj",
+                  "condition": "{parent}===\"Predictor\"",
+                  "dynamicType": "asyncSelect",
+                  "options": null,
+                  "fields": null,
+                  "url": "http://localhost:9999/routes/loko-time-series/predictors"
+                },
+                {
+                  "name": "info_obj_name",
+                  "type": "dynamic",
+                  "label": "Model",
+                  "helper": "",
+                  "group": "Info Parameters",
+                  "value": null,
+                  "description": "Select the name of the model you want to know about",
+                  "validation": null,
+                  "parent": "info_obj",
+                  "condition": "{parent}===\"Model\"",
+                  "dynamicType": "asyncSelect",
+                  "options": null,
+                  "fields": null,
+                  "url": "http://localhost:9999/routes/loko-time-series/models"
+                },
+                {
+                  "name": "info_obj_name",
+                  "type": "dynamic",
+                  "label": "Transformer",
+                  "helper": "",
+                  "group": "Info Parameters",
+                  "value": null,
+                  "description": "Select the name of the transformer you want to know about",
+                  "validation": null,
+                  "parent": "info_obj",
+                  "condition": "{parent}===\"Transformer\"",
+                  "dynamicType": "asyncSelect",
+                  "options": null,
+                  "fields": null,
+                  "url": "http://localhost:9999/routes/loko-time-series/transformers"
+                }
+              ],
+              "click": null,
+              "icon": "RiFileSettingsFill",
+              "values": {
+                "comment": "",
+                "alias": "",
+                "debug": true,
+                "predictor_name": "delhi_temperature",
+                "description": "Daily climate temperature in Dehli",
+                "existing_transf": false,
+                "existing_model": false,
+                "info_obj": "",
+                "transformer_bp": "{\n  \"__klass__\": \"sktime.transformations.compose.TransformerPipeline\",\n  \"steps\": [\n  {\n      \"__klass__\": \"sktime.transformations.series.detrend.Deseasonalizer\",\n      \"sp\": 4,\n      \"model\": \"additive\"\n    },\n    {\n      \"__klass__\": \"sktime.transformations.series.detrend.Detrender\"\n    }\n   ]\n}",
+                "model_bp": "{\n  \"__klass__\": \"sktime.forecasting.arima.ARIMA\",\n  \"maxiter\": 1500,\n  \"seasonal_order\": [\n    0,\n    1,\n    0,\n    4\n  ],\n  \"suppress_warnings\": true\n}\n",
+                "del_transformer": "",
+                "del_model": "",
+                "del_predictor": ""
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": 1465,
+            "y": 128
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "7347f12e-1e0f-4677-812a-a98806f68243",
+          "position": {
+            "x": 1189,
+            "y": 100
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 150,
+          "height": 56,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "name": "Trigger",
+            "events": null,
+            "description": "### Description\nThe TRIGGER component is used to start streams.\n\n### Output\nThe parameter Type can be set as a **String** or an **Object**. The parameter Value, on the other hand, defines the actual output of the component.",
+            "inputs": [],
+            "outputs": [
+              {
+                "id": "output",
+                "label": "output"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Common",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "type",
+                  "type": "select",
+                  "description": "The type of data",
+                  "label": "Type",
+                  "validation": {
+                    "required": "Required field"
+                  },
+                  "fragment": null,
+                  "advanced": false,
+                  "options": [
+                    "String",
+                    "Object"
+                  ],
+                  "value": null
+                },
+                {
+                  "name": "value",
+                  "type": "dynamic",
+                  "dynamicType": {
+                    "String": "area",
+                    "Object": "code"
+                  },
+                  "parent": "type",
+                  "label": "Value",
+                  "validation": {
+                    "required": "Required field"
+                  }
+                }
+              ],
+              "click": "Send message",
+              "icon": "RiPlayFill",
+              "values": {
+                "comment": "",
+                "alias": "",
+                "debug": false,
+                "type": "String",
+                "value": "Hello world!"
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": 1189,
+            "y": 100
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "30242946-ee31-4415-bcbf-0d0c75a292d3",
+          "position": {
+            "x": 2802.6671557375826,
+            "y": -44.74767972995131
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 150,
+          "height": 56,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "name": "Function",
+            "events": null,
+            "description": "### Description\nThe FUNCTION component is used to apply Python code to the input component's. The input can be retrieved using the variable *data*.\n\nTo be able to use data from components of type FUNCTION that are not linked together, the object is set repository.\n\n```python\nrepository.set('value', 5) - this sets the variable value to 5.\nrepository.get('value') - in this way the variable is called value and the value 5 is returned.\n```\n\n### Input\nThe input is used by the component using the variable **data**.\n\n### Output\nThe output coincides with the return of the code defined when the component was created.",
+            "inputs": [
+              {
+                "id": "input",
+                "label": "input",
+                "closed": false
+              }
+            ],
+            "outputs": [
+              {
+                "id": "output",
+                "label": "output",
+                "closed": false
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Common",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "propagate",
+                  "type": "boolean",
+                  "label": "Flush at the end"
+                },
+                {
+                  "name": "notify_warnings",
+                  "type": "boolean",
+                  "label": "Notify warnings"
+                },
+                {
+                  "name": "code",
+                  "type": "code",
+                  "description": "A python function that processes the incoming message. \nVariables available are:\n- **data**: the incoming message\n",
+                  "label": "Code",
+                  "validation": {
+                    "required": "Required field"
+                  },
+                  "fragment": null,
+                  "advanced": false,
+                  "options": null,
+                  "value": null
+                }
+              ],
+              "click": null,
+              "icon": "RiCodeSSlashFill",
+              "values": {
+                "comment": "",
+                "alias": "Prepare Data",
+                "debug": false,
+                "propagate": true,
+                "notify_warnings": true,
+                "code": "# res =  {\"data\":[d[\"po_ordered_on\"]] for d in data}\ntarget_name=\"_value\"\n# orderd_data = {k: v for k, v in sorted(data.items(), key=lambda item: item[1])}\nsorted_data = sorted(data, key=lambda d: d['_time']) \n#we have to sort our data based on the date key\nres = dict(data=[], target=[])\nfor rows in sorted_data:\n  row_dict = dict()\n  row_dict[\"time\"] = rows[\"_time\"]\n  target_value = rows[\"_value\"]\n  res[\"data\"].append(row_dict)\n  res[\"target\"].append(float(target_value))\n\nreturn res"
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": 2802.6671557375826,
+            "y": -44.74767972995131
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "0c96feb4-b147-404c-ac3f-a0ea74237e81",
+          "position": {
+            "x": 2566.50848422505,
+            "y": -45.419678219265535
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 172,
+          "height": 72,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "name": "Grouper",
+            "events": null,
+            "description": "### Description\nThe GROUPER component is used to group the elements received in input. The items will be returned in batches with a maximum size equal to **Group size**.\n\n### Input\nIn this case there is no fixed input format.\n\n### Output\nIn output lists of elements received in input with a maximum length equal to **Group size**.",
+            "inputs": [
+              {
+                "id": "input",
+                "label": "input",
+                "closed": false
+              }
+            ],
+            "outputs": [
+              {
+                "id": "output",
+                "label": "output"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Common",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "n",
+                  "label": "Group size",
+                  "type": "number"
+                }
+              ],
+              "click": null,
+              "icon": "RiGroupFill",
+              "values": {
+                "comment": "",
+                "alias": "Grouping Data",
+                "debug": false,
+                "n": "100000"
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": 2566.50848422505,
+            "y": -45.419678219265535
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "74cf942f-e593-4d23-86db-adf36b5a3980",
+          "position": {
+            "x": 1134.9347133136398,
+            "y": 37.72107223863361
+          },
+          "type": "comment",
+          "dragHandle": "#commentHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 612,
+          "height": 214,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "comment": "Creating TS model",
+            "fill": "#43AA8B",
+            "height": 214,
+            "width": 612
+          },
+          "zIndex": -1,
+          "selectable": false,
+          "connectable": false,
+          "positionAbsolute": {
+            "x": 1134.9347133136398,
+            "y": 37.72107223863361
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "791d8fb4-cf18-43c3-aa26-32425ac235ae",
+          "position": {
+            "x": 2078.4670737711376,
+            "y": -99.83858413306365
+          },
+          "type": "comment",
+          "dragHandle": "#commentHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 1210,
+          "height": 177,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "comment": "Training TS",
+            "fill": "#90BE6D",
+            "height": 177,
+            "width": 1209.5809418099393
+          },
+          "zIndex": -1,
+          "selectable": false,
+          "connectable": false,
+          "positionAbsolute": {
+            "x": 2078.4670737711376,
+            "y": -99.83858413306365
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "1857f782-6586-41cc-b8aa-7f9ca4ebc880",
+          "position": {
+            "x": 2165.6855973313127,
+            "y": 299.8021652126343
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 150,
+          "height": 56,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "name": "Trigger",
+            "events": null,
+            "description": "### Description\nThe TRIGGER component is used to start streams.\n\n### Output\nThe parameter Type can be set as a **String** or an **Object**. The parameter Value, on the other hand, defines the actual output of the component.",
+            "inputs": [],
+            "outputs": [
+              {
+                "id": "output",
+                "label": "output"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Common",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "type",
+                  "type": "select",
+                  "description": "The type of data",
+                  "label": "Type",
+                  "validation": {
+                    "required": "Required field"
+                  },
+                  "fragment": null,
+                  "advanced": false,
+                  "options": [
+                    "String",
+                    "Object"
+                  ],
+                  "value": null
+                },
+                {
+                  "name": "value",
+                  "type": "dynamic",
+                  "dynamicType": {
+                    "String": "area",
+                    "Object": "code"
+                  },
+                  "parent": "type",
+                  "label": "Value",
+                  "validation": {
+                    "required": "Required field"
+                  }
+                }
+              ],
+              "click": "Send message",
+              "icon": "RiPlayFill",
+              "values": {
+                "comment": "",
+                "alias": "",
+                "debug": false,
+                "type": "String",
+                "value": "Hello world!"
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": 2165.6855973313127,
+            "y": 299.8021652126343
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "9075f424-8074-41b1-a6be-ce23968c3aff",
+          "position": {
+            "x": 2877.0644044285023,
+            "y": 308.7622698774063
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 150,
+          "height": 56,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "name": "Function",
+            "events": null,
+            "description": "### Description\nThe FUNCTION component is used to apply Python code to the input component's. The input can be retrieved using the variable *data*.\n\nTo be able to use data from components of type FUNCTION that are not linked together, the object is set repository.\n\n```python\nrepository.set('value', 5) - this sets the variable value to 5.\nrepository.get('value') - in this way the variable is called value and the value 5 is returned.\n```\n\n### Input\nThe input is used by the component using the variable **data**.\n\n### Output\nThe output coincides with the return of the code defined when the component was created.",
+            "inputs": [
+              {
+                "id": "input",
+                "label": "input"
+              }
+            ],
+            "outputs": [
+              {
+                "id": "output",
+                "label": "output"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Common",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "propagate",
+                  "type": "boolean",
+                  "label": "Flush at the end"
+                },
+                {
+                  "name": "notify_warnings",
+                  "type": "boolean",
+                  "label": "Notify warnings"
+                },
+                {
+                  "name": "code",
+                  "type": "code",
+                  "description": "A python function that processes the incoming message. \nVariables available are:\n- **data**: the incoming message\n",
+                  "label": "Code",
+                  "validation": {
+                    "required": "Required field"
+                  },
+                  "fragment": null,
+                  "advanced": false,
+                  "options": null,
+                  "value": null
+                }
+              ],
+              "click": null,
+              "icon": "RiCodeSSlashFill",
+              "values": {
+                "comment": "",
+                "alias": "Prepare Data",
+                "debug": false,
+                "propagate": true,
+                "notify_warnings": true,
+                "code": "# res =  {\"data\":[d[\"po_ordered_on\"]] for d in data}\ntarget_name=\"_value\"\n# orderd_data = {k: v for k, v in sorted(data.items(), key=lambda item: item[1])}\nsorted_data = sorted(data, key=lambda d: d['_time']) \n#we have to sort our data based on the date key\nres = dict(data=[], target=[])\nfor rows in sorted_data:\n  row_dict = dict()\n  row_dict[\"time\"] = rows[\"_time\"]\n  target_value = rows[\"_value\"]\n  res[\"data\"].append(row_dict)\n  res[\"target\"].append(float(target_value))\n\nreturn res"
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": 2877.0644044285023,
+            "y": 308.7622698774063
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "1b7654c3-ee85-4dc6-8092-f11c3b4f312c",
+          "position": {
+            "x": 2623.80642074324,
+            "y": 309.24258683311405
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 172,
+          "height": 72,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "name": "Grouper",
+            "events": null,
+            "description": "### Description\nThe GROUPER component is used to group the elements received in input. The items will be returned in batches with a maximum size equal to **Group size**.\n\n### Input\nIn this case there is no fixed input format.\n\n### Output\nIn output lists of elements received in input with a maximum length equal to **Group size**.",
+            "inputs": [
+              {
+                "id": "input",
+                "label": "input",
+                "closed": false
+              }
+            ],
+            "outputs": [
+              {
+                "id": "output",
+                "label": "output"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Common",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "n",
+                  "label": "Group size",
+                  "type": "number"
+                }
+              ],
+              "click": null,
+              "icon": "RiGroupFill",
+              "values": {
+                "comment": "",
+                "alias": "Grouping Data",
+                "debug": false,
+                "n": "100000"
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": 2623.80642074324,
+            "y": 309.24258683311405
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "03b308cd-736c-4c21-9a30-06b616ef8177",
+          "position": {
+            "x": 3113.617846733427,
+            "y": 293.22696838379005
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 206,
+          "height": 72,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "name": "TimeSeries",
+            "events": null,
+            "description": "###TimeSeries components",
+            "inputs": [
+              {
+                "id": "fit",
+                "label": "fit",
+                "service": "loko-services/predictors/fit",
+                "to": "fit"
+              },
+              {
+                "id": "predict",
+                "label": "predict",
+                "service": "loko-services/predictors/predict",
+                "to": "predict"
+              },
+              {
+                "id": "evaluate",
+                "label": "evaluate",
+                "service": "loko-services/predictors/evaluate",
+                "to": "evaluate"
+              }
+            ],
+            "outputs": [
+              {
+                "id": "fit",
+                "label": "fit"
+              },
+              {
+                "id": "predict",
+                "label": "predict"
+              },
+              {
+                "id": "evaluate",
+                "label": "evaluate"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Custom",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "predictor_name",
+                  "type": "asyncSelect",
+                  "label": "Predictor Name",
+                  "helper": "Select the name of the predictor you want to use",
+                  "group": "",
+                  "value": null,
+                  "description": "",
+                  "validation": {
+                    "required": "Required field"
+                  },
+                  "url": "http://localhost:9999/routes/loko-time-series/predictors"
+                },
+                {
+                  "name": "datetime_feature",
+                  "type": "text",
+                  "label": "Datetime Feature",
+                  "helper": "Name of the feature to use as date-time reference",
+                  "group": "Fit Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "datetime_frequency",
+                  "type": "text",
+                  "label": "Datetime Frequency",
+                  "helper": "Time frequence required for the model ",
+                  "group": "Fit Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "forecasting_horizon_fit",
+                  "type": "number",
+                  "label": "Forecasting Horizon",
+                  "helper": "",
+                  "group": "Fit Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "report",
+                  "type": "boolean",
+                  "label": "Compute metrics report",
+                  "helper": "",
+                  "group": "Fit Parameters",
+                  "value": "false",
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "test_size",
+                  "type": "dynamic",
+                  "label": "Test Size",
+                  "helper": "",
+                  "group": "Fit Parameters",
+                  "value": 30,
+                  "description": "",
+                  "validation": null,
+                  "parent": "report",
+                  "condition": "{parent}===true",
+                  "dynamicType": "number",
+                  "options": null,
+                  "fields": null,
+                  "url": null
+                },
+                {
+                  "name": "forecasting_horizon",
+                  "type": "number",
+                  "label": "Forecasting Horizon",
+                  "helper": "",
+                  "group": "Predict Parameters",
+                  "value": 1,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "save_eval_report",
+                  "type": "boolean",
+                  "label": "Save metrics report",
+                  "helper": "",
+                  "group": "Evaluate parameters",
+                  "value": false,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "eval_fname",
+                  "type": "dynamic",
+                  "label": "Evaluation file name",
+                  "helper": "",
+                  "group": "Evaluate parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null,
+                  "parent": "save_eval_report",
+                  "condition": "{parent}===true",
+                  "dynamicType": "text",
+                  "options": null,
+                  "fields": null,
+                  "url": null
+                }
+              ],
+              "click": null,
+              "icon": "RiFundsBoxFill",
+              "values": {
+                "comment": "",
+                "alias": "Training TS Model",
+                "debug": true,
+                "datetime_feature": "time",
+                "datetime_frequency": "d",
+                "forecasting_horizon_fit": "",
+                "report": true,
+                "forecasting_horizon": "1",
+                "save_eval_report": false,
+                "test_size": "0.2",
+                "predictor_name": "delhi_temperature"
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": 3113.617846733427,
+            "y": 293.22696838379005
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "b5b97264-e43a-48e9-939b-a43b5f655791",
+          "position": {
+            "x": 2117.6855973313127,
+            "y": 238.58525814442538
+          },
+          "type": "comment",
+          "dragHandle": "#commentHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 1237.5809418099393,
+          "height": 189,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "comment": "Evaluate TS",
+            "fill": "#F9C74F",
+            "height": 189,
+            "width": 1237.5809418099393
+          },
+          "zIndex": -1,
+          "selectable": false,
+          "connectable": false,
+          "positionAbsolute": {
+            "x": 2117.6855973313127,
+            "y": 238.58525814442538
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "3a5a6d3f-b253-49c6-a9a7-2df3ffd7380d",
+          "position": {
+            "x": 535,
+            "y": -52
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 150,
+          "height": 56,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "pname": "influxdb-grafana-ext",
+            "name": "InfluxDB",
+            "events": null,
+            "description": "### Description\nInfluxDB component allows you to save, read, delete and query data from the DB directly in the Loko flow.\n\n### Configuration\n\nThe block's configuration is divided in 3 sections: *Save Parameters*, *Delete Parameters* and *Read Parameters*.\n\n#### Save Parameters\n\nFirst you have to set the **Bucket Name**.\n\n**Manual** parameter allows you to manually set the **Measurement Name** and the names of the keys associated to \n**Time**, **Tags** and **Fields**. If the input data already provides this information you can set **Manual** to \nFalse.\n\n#### Delete Parameters\n\nYou have to set the **Bucket Name** and the time range: **Start** and **Stop**. \n\nIf you set **From query** to False, you can delete all data saved with a given **Measurement Name**. Otherwise, you can \nprovide a custom query as the input of the block.\n\n#### Read Parameters\n\nIn order to read data from your DB you have to provide the **Bucket Name**, **Measurement Name** and the time range: \n**Start** and **Stop**.\n \n### Input\n\n**Save** input requires a list of dictionaries. If you manually set **Time**, **Tags** and **Fields** you can simply \npass the rows of your data. Otherwise, you have to map your data:\n```json\n[   {\"measurement\":\"sensor\",\n    \"tags\":{\"machine_status\":\"NORMAL\"},\n    \"fields\":{\"sensor_00\":2.405382,\"sensor_01\":50.0868,\"sensor_02\":51.25868,\"sensor_03\":44.2274284362793},\n    \"time\":\"2018-08-17 21:20:00\"\n    },\n    {\"measurement\":\"sensor\",\n    \"tags\":{\"machine_status\":\"NORMAL\"},\n    \"fields\":{\"sensor_00\":2.4004630000000002,\"sensor_01\":50,\"sensor_02\":51.30208,\"sensor_03\":44.2274284362793},\n    \"time\":\"2018-08-17 21:21:00\"\n    },\n    {\"measurement\":\"sensor\",\n    \"tags\":{\"machine_status\":\"NORMAL\"},\n    \"fields\":{\"sensor_00\":2.406366,\"sensor_01\":50,\"sensor_02\":51.3020820617676,\"sensor_03\":44.2274284362793},\n    \"time\":\"2018-08-17 21:22:00\"\n    },\n]\n```\n\n**Read** doesn't require specific input.\n\n**Delete** input requires a query if parameter **From query** is set to True. \n\nExample:  \n\n```json\n_measurement=\"sensor\"\n```\n\n**Query** input requires the string of the query.\n\nExample:  \n\n```json\nfrom(bucket:\"influx-bu\") |> range(start: 1970-01-01T00:00:00Z, stop: 2022-10-24T08:00:00Z) |> filter(fn: (r) => r._measurement == \"sensor\")\n```\n\n",
+            "inputs": [
+              {
+                "id": "save",
+                "label": "Save",
+                "service": "save_data",
+                "to": "save"
+              },
+              {
+                "id": "read",
+                "label": "Read",
+                "service": "read",
+                "to": "read"
+              },
+              {
+                "id": "delete",
+                "label": "Delete",
+                "service": "delete_data",
+                "to": "delete"
+              },
+              {
+                "id": "query",
+                "label": "Query",
+                "service": "query",
+                "to": "query"
+              }
+            ],
+            "outputs": [
+              {
+                "id": "save",
+                "label": "Save"
+              },
+              {
+                "id": "read",
+                "label": "Read"
+              },
+              {
+                "id": "delete",
+                "label": "Delete"
+              },
+              {
+                "id": "query",
+                "label": "Query"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Custom",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "bucket_save",
+                  "type": "text",
+                  "label": "Bucket Name",
+                  "helper": "",
+                  "group": "Save Parameters",
+                  "value": "influx-bu",
+                  "description": "",
+                  "validation": {
+                    "required": "Required field"
+                  }
+                },
+                {
+                  "name": "manual",
+                  "type": "boolean",
+                  "label": "Manual",
+                  "helper": "",
+                  "group": "Save Parameters",
+                  "value": true,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "measurement_name",
+                  "type": "dynamic",
+                  "label": "Measurement Name",
+                  "helper": "",
+                  "group": "Save Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null,
+                  "parent": "manual",
+                  "condition": "{parent}",
+                  "dynamicType": "text",
+                  "options": null,
+                  "fields": null,
+                  "url": null
+                },
+                {
+                  "name": "time",
+                  "type": "dynamic",
+                  "label": "Time Key",
+                  "helper": "",
+                  "group": "Save Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null,
+                  "parent": "manual",
+                  "condition": "{parent}",
+                  "dynamicType": "text",
+                  "options": null,
+                  "fields": null,
+                  "url": null
+                },
+                {
+                  "name": "tags",
+                  "type": "dynamic",
+                  "label": "Tags",
+                  "helper": "",
+                  "group": "Save Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null,
+                  "parent": "manual",
+                  "condition": "{parent}",
+                  "dynamicType": "multiKeyValue",
+                  "options": null,
+                  "fields": [
+                    {
+                      "name": "tag_key",
+                      "placeholder": "Tag Key",
+                      "validation": null
+                    }
+                  ],
+                  "url": null
+                },
+                {
+                  "name": "fields",
+                  "type": "dynamic",
+                  "label": "Fields",
+                  "helper": "",
+                  "group": "Save Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null,
+                  "parent": "manual",
+                  "condition": "{parent}",
+                  "dynamicType": "multiKeyValue",
+                  "options": null,
+                  "fields": [
+                    {
+                      "name": "field_key",
+                      "placeholder": "Field Key",
+                      "validation": null
+                    }
+                  ],
+                  "url": null
+                },
+                {
+                  "name": "bucket_del",
+                  "type": "text",
+                  "label": "Bucket Name",
+                  "helper": "",
+                  "group": "Delete Parameters",
+                  "value": "influx-bu",
+                  "description": "",
+                  "validation": {
+                    "required": "Required field"
+                  }
+                },
+                {
+                  "name": "from_query_del",
+                  "type": "boolean",
+                  "label": "From query",
+                  "helper": "",
+                  "group": "Delete Parameters",
+                  "value": false,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "measurement_delete",
+                  "type": "dynamic",
+                  "label": "Measurement Name",
+                  "helper": "",
+                  "group": "Delete Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null,
+                  "parent": "from_query_del",
+                  "condition": "!{parent}",
+                  "dynamicType": "text",
+                  "options": null,
+                  "fields": null,
+                  "url": null
+                },
+                {
+                  "name": "start_delete",
+                  "type": "text",
+                  "label": "Start",
+                  "helper": "Define the starting time to consider for deleting your data",
+                  "group": "Delete Parameters",
+                  "value": "1970-01-01T00:00:00Z",
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "stop_delete",
+                  "type": "text",
+                  "label": "Stop",
+                  "helper": "Define the stopping time to consider for deleting your data",
+                  "group": "Delete Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "bucket_read",
+                  "type": "text",
+                  "label": "Bucket Name",
+                  "helper": "",
+                  "group": "Read Parameters",
+                  "value": "influx-bu",
+                  "description": "",
+                  "validation": {
+                    "required": "Required field"
+                  }
+                },
+                {
+                  "name": "measurement_read",
+                  "type": "text",
+                  "label": "Measurement Name",
+                  "helper": "",
+                  "group": "Read Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "start_read",
+                  "type": "text",
+                  "label": "Start",
+                  "helper": "Define the starting time to consider for reading your data",
+                  "group": "Read Parameters",
+                  "value": "1970-01-01T00:00:00Z",
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "stop_read",
+                  "type": "text",
+                  "label": "Stop",
+                  "helper": "Define the stopping time to consider for reading your data",
+                  "group": "Read Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null
+                }
+              ],
+              "click": null,
+              "icon": "RiStackFill",
+              "values": {
+                "comment": "",
+                "alias": "",
+                "debug": true,
+                "bucket_save": "delhi_climate",
+                "manual": true,
+                "bucket_del": "delhi_climate",
+                "from_query_del": false,
+                "start_delete": "1970-01-01T00:00:00Z",
+                "stop_delete": "",
+                "bucket_read": "influx-bu",
+                "measurement_read": "",
+                "start_read": "1970-01-01T00:00:00Z",
+                "stop_read": "",
+                "measurement_name": "delhi_climate_train",
+                "time": "date",
+                "fields": [
+                  {
+                    "field_key": "meantemp",
+                    "id": "fda4cbc0-6626-4d84-94f7-b5c09db1db2f"
+                  }
+                ],
+                "measurement_delete": "delhi_climate_train"
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": 535,
+            "y": -52
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "3dcd018e-fe86-4e79-9283-afc58153b3ed",
+          "position": {
+            "x": 565,
+            "y": 265
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 150,
+          "height": 56,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "pname": "influxdb-grafana-ext",
+            "name": "InfluxDB",
+            "events": null,
+            "description": "### Description\nInfluxDB component allows you to save, read, delete and query data from the DB directly in the Loko flow.\n\n### Configuration\n\nThe block's configuration is divided in 3 sections: *Save Parameters*, *Delete Parameters* and *Read Parameters*.\n\n#### Save Parameters\n\nFirst you have to set the **Bucket Name**.\n\n**Manual** parameter allows you to manually set the **Measurement Name** and the names of the keys associated to \n**Time**, **Tags** and **Fields**. If the input data already provides this information you can set **Manual** to \nFalse.\n\n#### Delete Parameters\n\nYou have to set the **Bucket Name** and the time range: **Start** and **Stop**. \n\nIf you set **From query** to False, you can delete all data saved with a given **Measurement Name**. Otherwise, you can \nprovide a custom query as the input of the block.\n\n#### Read Parameters\n\nIn order to read data from your DB you have to provide the **Bucket Name**, **Measurement Name** and the time range: \n**Start** and **Stop**.\n \n### Input\n\n**Save** input requires a list of dictionaries. If you manually set **Time**, **Tags** and **Fields** you can simply \npass the rows of your data. Otherwise, you have to map your data:\n```json\n[   {\"measurement\":\"sensor\",\n    \"tags\":{\"machine_status\":\"NORMAL\"},\n    \"fields\":{\"sensor_00\":2.405382,\"sensor_01\":50.0868,\"sensor_02\":51.25868,\"sensor_03\":44.2274284362793},\n    \"time\":\"2018-08-17 21:20:00\"\n    },\n    {\"measurement\":\"sensor\",\n    \"tags\":{\"machine_status\":\"NORMAL\"},\n    \"fields\":{\"sensor_00\":2.4004630000000002,\"sensor_01\":50,\"sensor_02\":51.30208,\"sensor_03\":44.2274284362793},\n    \"time\":\"2018-08-17 21:21:00\"\n    },\n    {\"measurement\":\"sensor\",\n    \"tags\":{\"machine_status\":\"NORMAL\"},\n    \"fields\":{\"sensor_00\":2.406366,\"sensor_01\":50,\"sensor_02\":51.3020820617676,\"sensor_03\":44.2274284362793},\n    \"time\":\"2018-08-17 21:22:00\"\n    },\n]\n```\n\n**Read** doesn't require specific input.\n\n**Delete** input requires a query if parameter **From query** is set to True. \n\nExample:  \n\n```json\n_measurement=\"sensor\"\n```\n\n**Query** input requires the string of the query.\n\nExample:  \n\n```json\nfrom(bucket:\"influx-bu\") |> range(start: 1970-01-01T00:00:00Z, stop: 2022-10-24T08:00:00Z) |> filter(fn: (r) => r._measurement == \"sensor\")\n```\n\n",
+            "inputs": [
+              {
+                "id": "save",
+                "label": "Save",
+                "service": "save_data",
+                "to": "save"
+              },
+              {
+                "id": "read",
+                "label": "Read",
+                "service": "read",
+                "to": "read"
+              },
+              {
+                "id": "delete",
+                "label": "Delete",
+                "service": "delete_data",
+                "to": "delete",
+                "closed": false
+              },
+              {
+                "id": "query",
+                "label": "Query",
+                "service": "query",
+                "to": "query"
+              }
+            ],
+            "outputs": [
+              {
+                "id": "save",
+                "label": "Save"
+              },
+              {
+                "id": "read",
+                "label": "Read"
+              },
+              {
+                "id": "delete",
+                "label": "Delete"
+              },
+              {
+                "id": "query",
+                "label": "Query"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Custom",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "bucket_save",
+                  "type": "text",
+                  "label": "Bucket Name",
+                  "helper": "",
+                  "group": "Save Parameters",
+                  "value": "influx-bu",
+                  "description": "",
+                  "validation": {
+                    "required": "Required field"
+                  }
+                },
+                {
+                  "name": "manual",
+                  "type": "boolean",
+                  "label": "Manual",
+                  "helper": "",
+                  "group": "Save Parameters",
+                  "value": true,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "measurement_name",
+                  "type": "dynamic",
+                  "label": "Measurement Name",
+                  "helper": "",
+                  "group": "Save Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null,
+                  "parent": "manual",
+                  "condition": "{parent}",
+                  "dynamicType": "text",
+                  "options": null,
+                  "fields": null,
+                  "url": null
+                },
+                {
+                  "name": "time",
+                  "type": "dynamic",
+                  "label": "Time Key",
+                  "helper": "",
+                  "group": "Save Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null,
+                  "parent": "manual",
+                  "condition": "{parent}",
+                  "dynamicType": "text",
+                  "options": null,
+                  "fields": null,
+                  "url": null
+                },
+                {
+                  "name": "tags",
+                  "type": "dynamic",
+                  "label": "Tags",
+                  "helper": "",
+                  "group": "Save Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null,
+                  "parent": "manual",
+                  "condition": "{parent}",
+                  "dynamicType": "multiKeyValue",
+                  "options": null,
+                  "fields": [
+                    {
+                      "name": "tag_key",
+                      "placeholder": "Tag Key",
+                      "validation": null
+                    }
+                  ],
+                  "url": null
+                },
+                {
+                  "name": "fields",
+                  "type": "dynamic",
+                  "label": "Fields",
+                  "helper": "",
+                  "group": "Save Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null,
+                  "parent": "manual",
+                  "condition": "{parent}",
+                  "dynamicType": "multiKeyValue",
+                  "options": null,
+                  "fields": [
+                    {
+                      "name": "field_key",
+                      "placeholder": "Field Key",
+                      "validation": null
+                    }
+                  ],
+                  "url": null
+                },
+                {
+                  "name": "bucket_del",
+                  "type": "text",
+                  "label": "Bucket Name",
+                  "helper": "",
+                  "group": "Delete Parameters",
+                  "value": "influx-bu",
+                  "description": "",
+                  "validation": {
+                    "required": "Required field"
+                  }
+                },
+                {
+                  "name": "from_query_del",
+                  "type": "boolean",
+                  "label": "From query",
+                  "helper": "",
+                  "group": "Delete Parameters",
+                  "value": false,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "measurement_delete",
+                  "type": "dynamic",
+                  "label": "Measurement Name",
+                  "helper": "",
+                  "group": "Delete Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null,
+                  "parent": "from_query_del",
+                  "condition": "!{parent}",
+                  "dynamicType": "text",
+                  "options": null,
+                  "fields": null,
+                  "url": null
+                },
+                {
+                  "name": "start_delete",
+                  "type": "text",
+                  "label": "Start",
+                  "helper": "Define the starting time to consider for deleting your data",
+                  "group": "Delete Parameters",
+                  "value": "1970-01-01T00:00:00Z",
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "stop_delete",
+                  "type": "text",
+                  "label": "Stop",
+                  "helper": "Define the stopping time to consider for deleting your data",
+                  "group": "Delete Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "bucket_read",
+                  "type": "text",
+                  "label": "Bucket Name",
+                  "helper": "",
+                  "group": "Read Parameters",
+                  "value": "influx-bu",
+                  "description": "",
+                  "validation": {
+                    "required": "Required field"
+                  }
+                },
+                {
+                  "name": "measurement_read",
+                  "type": "text",
+                  "label": "Measurement Name",
+                  "helper": "",
+                  "group": "Read Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "start_read",
+                  "type": "text",
+                  "label": "Start",
+                  "helper": "Define the starting time to consider for reading your data",
+                  "group": "Read Parameters",
+                  "value": "1970-01-01T00:00:00Z",
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "stop_read",
+                  "type": "text",
+                  "label": "Stop",
+                  "helper": "Define the stopping time to consider for reading your data",
+                  "group": "Read Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null
+                }
+              ],
+              "click": null,
+              "icon": "RiStackFill",
+              "values": {
+                "comment": "",
+                "alias": "",
+                "debug": true,
+                "bucket_save": "delhi_climate",
+                "manual": true,
+                "bucket_del": "delhi_climate",
+                "from_query_del": false,
+                "start_delete": "1970-01-01T00:00:00Z",
+                "stop_delete": "",
+                "bucket_read": "influx-bu",
+                "measurement_read": "",
+                "start_read": "1970-01-01T00:00:00Z",
+                "stop_read": "",
+                "measurement_name": "delhi_climate_test",
+                "time": "date",
+                "fields": [
+                  {
+                    "field_key": "meantemp",
+                    "id": "4bf79e05-0426-4295-a2bf-4a8efc884c50"
+                  }
+                ],
+                "measurement_delete": "delhi_climate_test"
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": 565,
+            "y": 265
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "39721a7b-6602-4e58-94c4-1ffad697e982",
+          "position": {
+            "x": 2350.1242506516783,
+            "y": -43.37716557535762
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 150,
+          "height": 56,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "pname": "influxdb-grafana-ext",
+            "name": "InfluxDB",
+            "events": null,
+            "description": "### Description\nInfluxDB component allows you to save, read, delete and query data from the DB directly in the Loko flow.\n\n### Configuration\n\nThe block's configuration is divided in 3 sections: *Save Parameters*, *Delete Parameters* and *Read Parameters*.\n\n#### Save Parameters\n\nFirst you have to set the **Bucket Name**.\n\n**Manual** parameter allows you to manually set the **Measurement Name** and the names of the keys associated to \n**Time**, **Tags** and **Fields**. If the input data already provides this information you can set **Manual** to \nFalse.\n\n#### Delete Parameters\n\nYou have to set the **Bucket Name** and the time range: **Start** and **Stop**. \n\nIf you set **From query** to False, you can delete all data saved with a given **Measurement Name**. Otherwise, you can \nprovide a custom query as the input of the block.\n\n#### Read Parameters\n\nIn order to read data from your DB you have to provide the **Bucket Name**, **Measurement Name** and the time range: \n**Start** and **Stop**.\n \n### Input\n\n**Save** input requires a list of dictionaries. If you manually set **Time**, **Tags** and **Fields** you can simply \npass the rows of your data. Otherwise, you have to map your data:\n```json\n[   {\"measurement\":\"sensor\",\n    \"tags\":{\"machine_status\":\"NORMAL\"},\n    \"fields\":{\"sensor_00\":2.405382,\"sensor_01\":50.0868,\"sensor_02\":51.25868,\"sensor_03\":44.2274284362793},\n    \"time\":\"2018-08-17 21:20:00\"\n    },\n    {\"measurement\":\"sensor\",\n    \"tags\":{\"machine_status\":\"NORMAL\"},\n    \"fields\":{\"sensor_00\":2.4004630000000002,\"sensor_01\":50,\"sensor_02\":51.30208,\"sensor_03\":44.2274284362793},\n    \"time\":\"2018-08-17 21:21:00\"\n    },\n    {\"measurement\":\"sensor\",\n    \"tags\":{\"machine_status\":\"NORMAL\"},\n    \"fields\":{\"sensor_00\":2.406366,\"sensor_01\":50,\"sensor_02\":51.3020820617676,\"sensor_03\":44.2274284362793},\n    \"time\":\"2018-08-17 21:22:00\"\n    },\n]\n```\n\n**Read** doesn't require specific input.\n\n**Delete** input requires a query if parameter **From query** is set to True. \n\nExample:  \n\n```json\n_measurement=\"sensor\"\n```\n\n**Query** input requires the string of the query.\n\nExample:  \n\n```json\nfrom(bucket:\"influx-bu\") |> range(start: 1970-01-01T00:00:00Z, stop: 2022-10-24T08:00:00Z) |> filter(fn: (r) => r._measurement == \"sensor\")\n```\n\n",
+            "inputs": [
+              {
+                "id": "save",
+                "label": "Save",
+                "service": "save_data",
+                "to": "save"
+              },
+              {
+                "id": "read",
+                "label": "Read",
+                "service": "read",
+                "to": "read"
+              },
+              {
+                "id": "delete",
+                "label": "Delete",
+                "service": "delete_data",
+                "to": "delete"
+              },
+              {
+                "id": "query",
+                "label": "Query",
+                "service": "query",
+                "to": "query"
+              }
+            ],
+            "outputs": [
+              {
+                "id": "save",
+                "label": "Save"
+              },
+              {
+                "id": "read",
+                "label": "Read"
+              },
+              {
+                "id": "delete",
+                "label": "Delete"
+              },
+              {
+                "id": "query",
+                "label": "Query"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Custom",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "bucket_save",
+                  "type": "text",
+                  "label": "Bucket Name",
+                  "helper": "",
+                  "group": "Save Parameters",
+                  "value": "influx-bu",
+                  "description": "",
+                  "validation": {
+                    "required": "Required field"
+                  }
+                },
+                {
+                  "name": "manual",
+                  "type": "boolean",
+                  "label": "Manual",
+                  "helper": "",
+                  "group": "Save Parameters",
+                  "value": true,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "measurement_name",
+                  "type": "dynamic",
+                  "label": "Measurement Name",
+                  "helper": "",
+                  "group": "Save Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null,
+                  "parent": "manual",
+                  "condition": "{parent}",
+                  "dynamicType": "text",
+                  "options": null,
+                  "fields": null,
+                  "url": null
+                },
+                {
+                  "name": "time",
+                  "type": "dynamic",
+                  "label": "Time Key",
+                  "helper": "",
+                  "group": "Save Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null,
+                  "parent": "manual",
+                  "condition": "{parent}",
+                  "dynamicType": "text",
+                  "options": null,
+                  "fields": null,
+                  "url": null
+                },
+                {
+                  "name": "tags",
+                  "type": "dynamic",
+                  "label": "Tags",
+                  "helper": "",
+                  "group": "Save Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null,
+                  "parent": "manual",
+                  "condition": "{parent}",
+                  "dynamicType": "multiKeyValue",
+                  "options": null,
+                  "fields": [
+                    {
+                      "name": "tag_key",
+                      "placeholder": "Tag Key",
+                      "validation": null
+                    }
+                  ],
+                  "url": null
+                },
+                {
+                  "name": "fields",
+                  "type": "dynamic",
+                  "label": "Fields",
+                  "helper": "",
+                  "group": "Save Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null,
+                  "parent": "manual",
+                  "condition": "{parent}",
+                  "dynamicType": "multiKeyValue",
+                  "options": null,
+                  "fields": [
+                    {
+                      "name": "field_key",
+                      "placeholder": "Field Key",
+                      "validation": null
+                    }
+                  ],
+                  "url": null
+                },
+                {
+                  "name": "bucket_del",
+                  "type": "text",
+                  "label": "Bucket Name",
+                  "helper": "",
+                  "group": "Delete Parameters",
+                  "value": "influx-bu",
+                  "description": "",
+                  "validation": {
+                    "required": "Required field"
+                  }
+                },
+                {
+                  "name": "from_query_del",
+                  "type": "boolean",
+                  "label": "From query",
+                  "helper": "",
+                  "group": "Delete Parameters",
+                  "value": false,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "measurement_delete",
+                  "type": "dynamic",
+                  "label": "Measurement Name",
+                  "helper": "",
+                  "group": "Delete Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null,
+                  "parent": "from_query_del",
+                  "condition": "!{parent}",
+                  "dynamicType": "text",
+                  "options": null,
+                  "fields": null,
+                  "url": null
+                },
+                {
+                  "name": "start_delete",
+                  "type": "text",
+                  "label": "Start",
+                  "helper": "Define the starting time to consider for deleting your data",
+                  "group": "Delete Parameters",
+                  "value": "1970-01-01T00:00:00Z",
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "stop_delete",
+                  "type": "text",
+                  "label": "Stop",
+                  "helper": "Define the stopping time to consider for deleting your data",
+                  "group": "Delete Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "bucket_read",
+                  "type": "text",
+                  "label": "Bucket Name",
+                  "helper": "",
+                  "group": "Read Parameters",
+                  "value": "influx-bu",
+                  "description": "",
+                  "validation": {
+                    "required": "Required field"
+                  }
+                },
+                {
+                  "name": "measurement_read",
+                  "type": "text",
+                  "label": "Measurement Name",
+                  "helper": "",
+                  "group": "Read Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "start_read",
+                  "type": "text",
+                  "label": "Start",
+                  "helper": "Define the starting time to consider for reading your data",
+                  "group": "Read Parameters",
+                  "value": "1970-01-01T00:00:00Z",
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "stop_read",
+                  "type": "text",
+                  "label": "Stop",
+                  "helper": "Define the stopping time to consider for reading your data",
+                  "group": "Read Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null
+                }
+              ],
+              "click": null,
+              "icon": "RiStackFill",
+              "values": {
+                "comment": "",
+                "alias": "",
+                "debug": false,
+                "bucket_save": "delhi_climate",
+                "manual": true,
+                "bucket_del": "delhi_climate",
+                "from_query_del": false,
+                "start_delete": "1970-01-01T00:00:00Z",
+                "stop_delete": "",
+                "bucket_read": "delhi_climate",
+                "measurement_read": "delhi_climate_train",
+                "start_read": "1970-01-01T00:00:00Z",
+                "stop_read": "",
+                "measurement_name": "",
+                "time": "",
+                "measurement_delete": "delhi_climate_train"
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": 2350.1242506516783,
+            "y": -43.37716557535762
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "d49546b1-317f-46f5-a38e-074c7be25041",
+          "position": {
+            "x": 2391.7004083741895,
+            "y": 311.85437892683206
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 150,
+          "height": 80,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "pname": "influxdb-grafana-ext",
+            "name": "InfluxDB",
+            "events": null,
+            "description": "### Description\nInfluxDB component allows you to save, read, delete and query data from the DB directly in the Loko flow.\n\n### Configuration\n\nThe block's configuration is divided in 3 sections: *Save Parameters*, *Delete Parameters* and *Read Parameters*.\n\n#### Save Parameters\n\nFirst you have to set the **Bucket Name**.\n\n**Manual** parameter allows you to manually set the **Measurement Name** and the names of the keys associated to \n**Time**, **Tags** and **Fields**. If the input data already provides this information you can set **Manual** to \nFalse.\n\n#### Delete Parameters\n\nYou have to set the **Bucket Name** and the time range: **Start** and **Stop**. \n\nIf you set **From query** to False, you can delete all data saved with a given **Measurement Name**. Otherwise, you can \nprovide a custom query as the input of the block.\n\n#### Read Parameters\n\nIn order to read data from your DB you have to provide the **Bucket Name**, **Measurement Name** and the time range: \n**Start** and **Stop**.\n \n### Input\n\n**Save** input requires a list of dictionaries. If you manually set **Time**, **Tags** and **Fields** you can simply \npass the rows of your data. Otherwise, you have to map your data:\n```json\n[   {\"measurement\":\"sensor\",\n    \"tags\":{\"machine_status\":\"NORMAL\"},\n    \"fields\":{\"sensor_00\":2.405382,\"sensor_01\":50.0868,\"sensor_02\":51.25868,\"sensor_03\":44.2274284362793},\n    \"time\":\"2018-08-17 21:20:00\"\n    },\n    {\"measurement\":\"sensor\",\n    \"tags\":{\"machine_status\":\"NORMAL\"},\n    \"fields\":{\"sensor_00\":2.4004630000000002,\"sensor_01\":50,\"sensor_02\":51.30208,\"sensor_03\":44.2274284362793},\n    \"time\":\"2018-08-17 21:21:00\"\n    },\n    {\"measurement\":\"sensor\",\n    \"tags\":{\"machine_status\":\"NORMAL\"},\n    \"fields\":{\"sensor_00\":2.406366,\"sensor_01\":50,\"sensor_02\":51.3020820617676,\"sensor_03\":44.2274284362793},\n    \"time\":\"2018-08-17 21:22:00\"\n    },\n]\n```\n\n**Read** doesn't require specific input.\n\n**Delete** input requires a query if parameter **From query** is set to True. \n\nExample:  \n\n```json\n_measurement=\"sensor\"\n```\n\n**Query** input requires the string of the query.\n\nExample:  \n\n```json\nfrom(bucket:\"influx-bu\") |> range(start: 1970-01-01T00:00:00Z, stop: 2022-10-24T08:00:00Z) |> filter(fn: (r) => r._measurement == \"sensor\")\n```\n\n",
+            "inputs": [
+              {
+                "id": "save",
+                "label": "Save",
+                "service": "save_data",
+                "to": "save"
+              },
+              {
+                "id": "read",
+                "label": "Read",
+                "service": "read",
+                "to": "read"
+              },
+              {
+                "id": "delete",
+                "label": "Delete",
+                "service": "delete_data",
+                "to": "delete"
+              },
+              {
+                "id": "query",
+                "label": "Query",
+                "service": "query",
+                "to": "query"
+              }
+            ],
+            "outputs": [
+              {
+                "id": "save",
+                "label": "Save"
+              },
+              {
+                "id": "read",
+                "label": "Read"
+              },
+              {
+                "id": "delete",
+                "label": "Delete"
+              },
+              {
+                "id": "query",
+                "label": "Query"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Custom",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "bucket_save",
+                  "type": "text",
+                  "label": "Bucket Name",
+                  "helper": "",
+                  "group": "Save Parameters",
+                  "value": "influx-bu",
+                  "description": "",
+                  "validation": {
+                    "required": "Required field"
+                  }
+                },
+                {
+                  "name": "manual",
+                  "type": "boolean",
+                  "label": "Manual",
+                  "helper": "",
+                  "group": "Save Parameters",
+                  "value": true,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "measurement_name",
+                  "type": "dynamic",
+                  "label": "Measurement Name",
+                  "helper": "",
+                  "group": "Save Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null,
+                  "parent": "manual",
+                  "condition": "{parent}",
+                  "dynamicType": "text",
+                  "options": null,
+                  "fields": null,
+                  "url": null
+                },
+                {
+                  "name": "time",
+                  "type": "dynamic",
+                  "label": "Time Key",
+                  "helper": "",
+                  "group": "Save Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null,
+                  "parent": "manual",
+                  "condition": "{parent}",
+                  "dynamicType": "text",
+                  "options": null,
+                  "fields": null,
+                  "url": null
+                },
+                {
+                  "name": "tags",
+                  "type": "dynamic",
+                  "label": "Tags",
+                  "helper": "",
+                  "group": "Save Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null,
+                  "parent": "manual",
+                  "condition": "{parent}",
+                  "dynamicType": "multiKeyValue",
+                  "options": null,
+                  "fields": [
+                    {
+                      "name": "tag_key",
+                      "placeholder": "Tag Key",
+                      "validation": null
+                    }
+                  ],
+                  "url": null
+                },
+                {
+                  "name": "fields",
+                  "type": "dynamic",
+                  "label": "Fields",
+                  "helper": "",
+                  "group": "Save Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null,
+                  "parent": "manual",
+                  "condition": "{parent}",
+                  "dynamicType": "multiKeyValue",
+                  "options": null,
+                  "fields": [
+                    {
+                      "name": "field_key",
+                      "placeholder": "Field Key",
+                      "validation": null
+                    }
+                  ],
+                  "url": null
+                },
+                {
+                  "name": "bucket_del",
+                  "type": "text",
+                  "label": "Bucket Name",
+                  "helper": "",
+                  "group": "Delete Parameters",
+                  "value": "influx-bu",
+                  "description": "",
+                  "validation": {
+                    "required": "Required field"
+                  }
+                },
+                {
+                  "name": "from_query_del",
+                  "type": "boolean",
+                  "label": "From query",
+                  "helper": "",
+                  "group": "Delete Parameters",
+                  "value": false,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "measurement_delete",
+                  "type": "dynamic",
+                  "label": "Measurement Name",
+                  "helper": "",
+                  "group": "Delete Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null,
+                  "parent": "from_query_del",
+                  "condition": "!{parent}",
+                  "dynamicType": "text",
+                  "options": null,
+                  "fields": null,
+                  "url": null
+                },
+                {
+                  "name": "start_delete",
+                  "type": "text",
+                  "label": "Start",
+                  "helper": "Define the starting time to consider for deleting your data",
+                  "group": "Delete Parameters",
+                  "value": "1970-01-01T00:00:00Z",
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "stop_delete",
+                  "type": "text",
+                  "label": "Stop",
+                  "helper": "Define the stopping time to consider for deleting your data",
+                  "group": "Delete Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "bucket_read",
+                  "type": "text",
+                  "label": "Bucket Name",
+                  "helper": "",
+                  "group": "Read Parameters",
+                  "value": "influx-bu",
+                  "description": "",
+                  "validation": {
+                    "required": "Required field"
+                  }
+                },
+                {
+                  "name": "measurement_read",
+                  "type": "text",
+                  "label": "Measurement Name",
+                  "helper": "",
+                  "group": "Read Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "start_read",
+                  "type": "text",
+                  "label": "Start",
+                  "helper": "Define the starting time to consider for reading your data",
+                  "group": "Read Parameters",
+                  "value": "1970-01-01T00:00:00Z",
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "stop_read",
+                  "type": "text",
+                  "label": "Stop",
+                  "helper": "Define the stopping time to consider for reading your data",
+                  "group": "Read Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null
+                }
+              ],
+              "click": null,
+              "icon": "RiStackFill",
+              "values": {
+                "comment": "",
+                "alias": "",
+                "debug": false,
+                "bucket_save": "delhi_climate",
+                "manual": true,
+                "bucket_del": "delhi_climate",
+                "from_query_del": false,
+                "start_delete": "1970-01-01T00:00:00Z",
+                "stop_delete": "",
+                "bucket_read": "delhi_climate",
+                "measurement_read": "delhi_climate_test",
+                "start_read": "1970-01-01T00:00:00Z",
+                "stop_read": "",
+                "measurement_name": "",
+                "time": "",
+                "measurement_delete": "delhi_climate_train"
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": 2391.7004083741895,
+            "y": 311.85437892683206
+          },
+          "__class__": "Node"
+        }
+      ],
+      "edges": [
+        {
+          "id": "reactflow__edge-5539790d-ce77-48b9-9376-c57d8214655doutput-48b91ff4-c5f4-47e0-8331-5927697d6b36input",
+          "source": "5539790d-ce77-48b9-9376-c57d8214655d",
+          "sourceHandle": "output",
+          "target": "48b91ff4-c5f4-47e0-8331-5927697d6b36",
+          "targetHandle": "input",
+          "data": {
+            "startColor": "#F8637A",
+            "stopColor": "#D770AD"
+          },
+          "selected": false,
+          "dragging": false,
+          "__class__": "Edge"
+        },
+        {
+          "id": "reactflow__edge-21545f82-3de3-4e33-90f9-223e3b400dd2output-adf2e5ec-8e67-414d-9c2e-5c104f0713ceinput",
+          "source": "21545f82-3de3-4e33-90f9-223e3b400dd2",
+          "sourceHandle": "output",
+          "target": "adf2e5ec-8e67-414d-9c2e-5c104f0713ce",
+          "targetHandle": "input",
+          "data": {
+            "startColor": "#F8637A",
+            "stopColor": "#D770AD"
+          },
+          "selected": false,
+          "dragging": false,
+          "__class__": "Edge"
+        },
+        {
+          "id": "reactflow__edge-7347f12e-1e0f-4677-812a-a98806f68243output-ea98981c-639a-4ac1-9daf-a0f9c0cf5f1ccreate",
+          "source": "7347f12e-1e0f-4677-812a-a98806f68243",
+          "sourceHandle": "output",
+          "target": "ea98981c-639a-4ac1-9daf-a0f9c0cf5f1c",
+          "targetHandle": "create",
+          "data": {
+            "startColor": "#D770AD",
+            "stopColor": "#888"
+          },
+          "selected": false,
+          "dragging": false,
+          "__class__": "Edge"
+        },
+        {
+          "id": "reactflow__edge-0c96feb4-b147-404c-ac3f-a0ea74237e81output-30242946-ee31-4415-bcbf-0d0c75a292d3input",
+          "source": "0c96feb4-b147-404c-ac3f-a0ea74237e81",
+          "sourceHandle": "output",
+          "target": "30242946-ee31-4415-bcbf-0d0c75a292d3",
+          "targetHandle": "input",
+          "data": {
+            "startColor": "#D770AD",
+            "stopColor": "#D770AD"
+          },
+          "selected": false,
+          "dragging": false,
+          "__class__": "Edge"
+        },
+        {
+          "id": "reactflow__edge-30242946-ee31-4415-bcbf-0d0c75a292d3output-5cb19524-2b17-41a4-a8b6-49c8e0a51716fit",
+          "source": "30242946-ee31-4415-bcbf-0d0c75a292d3",
+          "sourceHandle": "output",
+          "target": "5cb19524-2b17-41a4-a8b6-49c8e0a51716",
+          "targetHandle": "fit",
+          "data": {
+            "startColor": "#D770AD",
+            "stopColor": "#888"
+          },
+          "selected": false,
+          "dragging": false,
+          "__class__": "Edge"
+        },
+        {
+          "id": "reactflow__edge-1b7654c3-ee85-4dc6-8092-f11c3b4f312coutput-9075f424-8074-41b1-a6be-ce23968c3affinput",
+          "source": "1b7654c3-ee85-4dc6-8092-f11c3b4f312c",
+          "sourceHandle": "output",
+          "target": "9075f424-8074-41b1-a6be-ce23968c3aff",
+          "targetHandle": "input",
+          "data": {
+            "startColor": "#D770AD",
+            "stopColor": "#D770AD"
+          },
+          "selected": false,
+          "dragging": false,
+          "__class__": "Edge"
+        },
+        {
+          "id": "reactflow__edge-9075f424-8074-41b1-a6be-ce23968c3affoutput-03b308cd-736c-4c21-9a30-06b616ef8177evaluate",
+          "source": "9075f424-8074-41b1-a6be-ce23968c3aff",
+          "sourceHandle": "output",
+          "target": "03b308cd-736c-4c21-9a30-06b616ef8177",
+          "targetHandle": "evaluate",
+          "data": {
+            "startColor": "#D770AD",
+            "stopColor": "#888"
+          },
+          "selected": false,
+          "dragging": false,
+          "__class__": "Edge"
+        },
+        {
+          "id": "reactflow__edge-adf2e5ec-8e67-414d-9c2e-5c104f0713ceoutput-3a5a6d3f-b253-49c6-a9a7-2df3ffd7380dsave",
+          "source": "adf2e5ec-8e67-414d-9c2e-5c104f0713ce",
+          "sourceHandle": "output",
+          "target": "3a5a6d3f-b253-49c6-a9a7-2df3ffd7380d",
+          "targetHandle": "save",
+          "data": {
+            "startColor": "#D770AD",
+            "stopColor": "#888"
+          },
+          "selected": false,
+          "dragging": false,
+          "__class__": "Edge"
+        },
+        {
+          "id": "reactflow__edge-48b91ff4-c5f4-47e0-8331-5927697d6b36output-3dcd018e-fe86-4e79-9283-afc58153b3edsave",
+          "source": "48b91ff4-c5f4-47e0-8331-5927697d6b36",
+          "sourceHandle": "output",
+          "target": "3dcd018e-fe86-4e79-9283-afc58153b3ed",
+          "targetHandle": "save",
+          "data": {
+            "startColor": "#D770AD",
+            "stopColor": "#888"
+          },
+          "selected": false,
+          "dragging": false,
+          "__class__": "Edge"
+        },
+        {
+          "id": "reactflow__edge-c65ac347-862f-4ce4-8e67-094949fb5beaoutput-39721a7b-6602-4e58-94c4-1ffad697e982read",
+          "source": "c65ac347-862f-4ce4-8e67-094949fb5bea",
+          "sourceHandle": "output",
+          "target": "39721a7b-6602-4e58-94c4-1ffad697e982",
+          "targetHandle": "read",
+          "data": {
+            "startColor": "#D770AD",
+            "stopColor": "#888"
+          },
+          "selected": false,
+          "dragging": false,
+          "__class__": "Edge"
+        },
+        {
+          "id": "reactflow__edge-39721a7b-6602-4e58-94c4-1ffad697e982read-0c96feb4-b147-404c-ac3f-a0ea74237e81input",
+          "source": "39721a7b-6602-4e58-94c4-1ffad697e982",
+          "sourceHandle": "read",
+          "target": "0c96feb4-b147-404c-ac3f-a0ea74237e81",
+          "targetHandle": "input",
+          "data": {
+            "startColor": "#888",
+            "stopColor": "#D770AD"
+          },
+          "selected": false,
+          "dragging": false,
+          "__class__": "Edge"
+        },
+        {
+          "id": "reactflow__edge-1857f782-6586-41cc-b8aa-7f9ca4ebc880output-d49546b1-317f-46f5-a38e-074c7be25041read",
+          "source": "1857f782-6586-41cc-b8aa-7f9ca4ebc880",
+          "sourceHandle": "output",
+          "target": "d49546b1-317f-46f5-a38e-074c7be25041",
+          "targetHandle": "read",
+          "data": {
+            "startColor": "#D770AD",
+            "stopColor": "#888"
+          },
+          "selected": false,
+          "dragging": false,
+          "__class__": "Edge"
+        },
+        {
+          "id": "reactflow__edge-d49546b1-317f-46f5-a38e-074c7be25041read-1b7654c3-ee85-4dc6-8092-f11c3b4f312cinput",
+          "source": "d49546b1-317f-46f5-a38e-074c7be25041",
+          "sourceHandle": "read",
+          "target": "1b7654c3-ee85-4dc6-8092-f11c3b4f312c",
+          "targetHandle": "input",
+          "data": {
+            "startColor": "#888",
+            "stopColor": "#D770AD"
+          },
+          "selected": false,
+          "dragging": false,
+          "__class__": "Edge"
+        }
+      ],
+      "__class__": "Graph"
+    }
+  },
+  "open": [
+    "main"
+  ],
+  "active": "main",
+  "version": "1.0.0",
+  "__class__": "Project"
+}
