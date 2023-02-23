@@ -3,7 +3,7 @@
   "id": "time_series_demo",
   "description": "",
   "created_on": "02/02/2023, 12:18:07",
-  "last_modify": "21/02/2023, 11:09:12",
+  "last_modify": "23/02/2023, 16:57:45",
   "graphs": {
     "Manage TS": {
       "nodes": [
@@ -1946,7 +1946,8 @@
             "inputs": [
               {
                 "id": "input",
-                "label": "input"
+                "label": "input",
+                "closed": false
               }
             ],
             "outputs": [
@@ -2116,7 +2117,7 @@
               "values": {
                 "comment": "",
                 "alias": "",
-                "debug": true,
+                "debug": false,
                 "separator": ",",
                 "df": false,
                 "infer_type": true,
@@ -2251,7 +2252,7 @@
           "id": "c65ac347-862f-4ce4-8e67-094949fb5bea",
           "position": {
             "x": 2132.1624428810937,
-            "y": -54.62167706485476
+            "y": -48.62167706485476
           },
           "type": "custom",
           "dragHandle": "#nodeHandle",
@@ -2329,7 +2330,7 @@
               "values": {
                 "comment": "",
                 "alias": "",
-                "debug": false,
+                "debug": true,
                 "type": "String",
                 "value": "Hello world!"
               }
@@ -2340,7 +2341,7 @@
           "draggable": true,
           "positionAbsolute": {
             "x": 2132.1624428810937,
-            "y": -54.62167706485476
+            "y": -48.62167706485476
           },
           "__class__": "Node"
         },
@@ -2533,11 +2534,10 @@
                 "debug": true,
                 "datetime_feature": "time",
                 "datetime_frequency": "d",
-                "forecasting_horizon_fit": "3",
-                "report": true,
+                "forecasting_horizon_fit": "",
+                "report": false,
                 "forecasting_horizon": "1",
                 "save_eval_report": false,
-                "test_size": "0.2",
                 "predictor_name": "delhi_temperature"
               }
             },
@@ -2832,13 +2832,16 @@
                 "comment": "",
                 "alias": "",
                 "debug": true,
-                "predictor_name": "delhi_temperature",
+                "predictor_name": "delhi_temperature_prova2",
                 "description": "Daily climate temperature in Dehli",
                 "existing_transf": false,
                 "existing_model": false,
                 "info_obj": "",
-                "transformer_bp": "{\n  \"__klass__\": \"sktime.transformations.compose.TransformerPipeline\",\n  \"steps\": [\n  {\n      \"__klass__\": \"sktime.transformations.series.detrend.Deseasonalizer\",\n      \"sp\": 4,\n      \"model\": \"additive\"\n    },\n    {\n      \"__klass__\": \"sktime.transformations.series.detrend.Detrender\"\n    }\n   ]\n}",
-                "model_bp": "{\n  \"__klass__\": \"sktime.forecasting.arima.ARIMA\",\n  \"maxiter\": 1500,\n  \"seasonal_order\": [\n    0,\n    1,\n    0,\n    4\n  ],\n  \"suppress_warnings\": true\n}\n"
+                "transformer_bp": "{\n\n\u00a0\u00a0\"__klass__\": \"sktime.transformations.compose.TransformerPipeline\",\n\n\u00a0\u00a0\"steps\": [\n\n\u00a0\u00a0{\n\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\"__klass__\": \"sktime.transformations.series.detrend.Deseasonalizer\",\n\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\"sp\": 4,\n\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\"model\": \"additive\"\n\n\u00a0\u00a0\u00a0\u00a0},\n\n\u00a0\u00a0\u00a0\u00a0{\n\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\"__klass__\": \"sktime.transformations.series.detrend.Detrender\"\n\n\u00a0\u00a0\u00a0\u00a0}\n\n\u00a0\u00a0\u00a0]\n\n}",
+                "model_bp": "{\n\"__klass__\": \"sktime.forecasting.sarimax.SARIMAX\",\n\"train_order\": [2,0,2],\n\"m\":12,\n\"seasonal_order\": [\n    2,\n    1,\n    [],\n    12\n]\n}",
+                "del_transformer": "",
+                "del_model": "",
+                "del_predictor": ""
               }
             },
             "locked": null
@@ -3069,7 +3072,7 @@
               {
                 "id": "input",
                 "label": "input",
-                "closed": true
+                "closed": false
               }
             ],
             "outputs": [
@@ -4363,7 +4366,8 @@
                 "id": "read",
                 "label": "Read",
                 "service": "read",
-                "to": "read"
+                "to": "read",
+                "closed": false
               },
               {
                 "id": "delete",
@@ -4622,7 +4626,7 @@
               "values": {
                 "comment": "",
                 "alias": "",
-                "debug": true,
+                "debug": false,
                 "bucket_save": "delhi_climate",
                 "manual": true,
                 "bucket_del": "delhi_climate",
@@ -4966,8 +4970,8 @@
         {
           "id": "8cc5c983-a99a-4e9f-ab94-b88c45255bff",
           "position": {
-            "x": 2126.1180615160038,
-            "y": 555.7711909970438
+            "x": 2228.1180615160038,
+            "y": 937.7711909970438
           },
           "type": "custom",
           "dragHandle": "#nodeHandle",
@@ -5055,8 +5059,8 @@
           "selectable": true,
           "draggable": true,
           "positionAbsolute": {
-            "x": 2126.1180615160038,
-            "y": 555.7711909970438
+            "x": 2228.1180615160038,
+            "y": 937.7711909970438
           },
           "__class__": "Node"
         },
@@ -5087,7 +5091,8 @@
             "outputs": [
               {
                 "id": "output",
-                "label": "output"
+                "label": "output",
+                "closed": true
               }
             ],
             "configured": true,
@@ -5425,7 +5430,7 @@
                 "datetime_frequency": "d",
                 "forecasting_horizon_fit": "",
                 "report": true,
-                "forecasting_horizon": "10",
+                "forecasting_horizon": "30",
                 "save_eval_report": false,
                 "test_size": "0.2",
                 "predictor_name": "delhi_temperature"
@@ -5471,7 +5476,8 @@
                 "id": "read",
                 "label": "Read",
                 "service": "read",
-                "to": "read"
+                "to": "read",
+                "closed": true
               },
               {
                 "id": "delete",
@@ -5784,6 +5790,421 @@
             "y": 507.6520546893594
           },
           "__class__": "Node"
+        },
+        {
+          "id": "265ec20c-e6d2-402e-a540-a8e4386e9ebd",
+          "position": {
+            "x": 3953,
+            "y": 608
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 150,
+          "height": 80,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "pname": "influxdb-grafana-ext",
+            "name": "InfluxDB",
+            "events": null,
+            "description": "### Description\nInfluxDB component allows you to save, read, delete and query data from the DB directly in the Loko flow.\n\n### Configuration\n\nThe block's configuration is divided in 3 sections: *Save Parameters*, *Delete Parameters* and *Read Parameters*.\n\n#### Save Parameters\n\nFirst you have to set the **Bucket Name**.\n\n**Manual** parameter allows you to manually set the **Measurement Name** and the names of the keys associated to \n**Time**, **Tags** and **Fields**. If the input data already provides this information you can set **Manual** to \nFalse.\n\n#### Delete Parameters\n\nYou have to set the **Bucket Name** and the time range: **Start** and **Stop**. \n\nIf you set **From query** to False, you can delete all data saved with a given **Measurement Name**. Otherwise, you can \nprovide a custom query as the input of the block.\n\n#### Read Parameters\n\nIn order to read data from your DB you have to provide the **Bucket Name**, **Measurement Name** and the time range: \n**Start** and **Stop**.\n \n### Input\n\n**Save** input requires a list of dictionaries. If you manually set **Time**, **Tags** and **Fields** you can simply \npass the rows of your data. Otherwise, you have to map your data:\n```json\n[   {\"measurement\":\"sensor\",\n    \"tags\":{\"machine_status\":\"NORMAL\"},\n    \"fields\":{\"sensor_00\":2.405382,\"sensor_01\":50.0868,\"sensor_02\":51.25868,\"sensor_03\":44.2274284362793},\n    \"time\":\"2018-08-17 21:20:00\"\n    },\n    {\"measurement\":\"sensor\",\n    \"tags\":{\"machine_status\":\"NORMAL\"},\n    \"fields\":{\"sensor_00\":2.4004630000000002,\"sensor_01\":50,\"sensor_02\":51.30208,\"sensor_03\":44.2274284362793},\n    \"time\":\"2018-08-17 21:21:00\"\n    },\n    {\"measurement\":\"sensor\",\n    \"tags\":{\"machine_status\":\"NORMAL\"},\n    \"fields\":{\"sensor_00\":2.406366,\"sensor_01\":50,\"sensor_02\":51.3020820617676,\"sensor_03\":44.2274284362793},\n    \"time\":\"2018-08-17 21:22:00\"\n    },\n]\n```\n\n**Read** doesn't require specific input.\n\n**Delete** input requires a query if parameter **From query** is set to True. \n\nExample:  \n\n```json\n_measurement=\"sensor\"\n```\n\n**Query** input requires the string of the query.\n\nExample:  \n\n```json\nfrom(bucket:\"influx-bu\") |> range(start: 1970-01-01T00:00:00Z, stop: 2022-10-24T08:00:00Z) |> filter(fn: (r) => r._measurement == \"sensor\")\n```\n\n",
+            "inputs": [
+              {
+                "id": "save",
+                "label": "Save",
+                "service": "save_data",
+                "to": "save"
+              },
+              {
+                "id": "read",
+                "label": "Read",
+                "service": "read",
+                "to": "read"
+              },
+              {
+                "id": "delete",
+                "label": "Delete",
+                "service": "delete_data",
+                "to": "delete"
+              },
+              {
+                "id": "query",
+                "label": "Query",
+                "service": "query",
+                "to": "query"
+              }
+            ],
+            "outputs": [
+              {
+                "id": "save",
+                "label": "Save"
+              },
+              {
+                "id": "read",
+                "label": "Read"
+              },
+              {
+                "id": "delete",
+                "label": "Delete"
+              },
+              {
+                "id": "query",
+                "label": "Query"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Custom",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "bucket_save",
+                  "type": "text",
+                  "label": "Bucket Name",
+                  "helper": "",
+                  "group": "Save Parameters",
+                  "value": "influx-bu",
+                  "description": "",
+                  "validation": {
+                    "required": "Required field"
+                  }
+                },
+                {
+                  "name": "manual",
+                  "type": "boolean",
+                  "label": "Manual",
+                  "helper": "",
+                  "group": "Save Parameters",
+                  "value": true,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "measurement_name",
+                  "type": "dynamic",
+                  "label": "Measurement Name",
+                  "helper": "",
+                  "group": "Save Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null,
+                  "parent": "manual",
+                  "condition": "{parent}",
+                  "dynamicType": "text",
+                  "options": null,
+                  "fields": null,
+                  "url": null
+                },
+                {
+                  "name": "time",
+                  "type": "dynamic",
+                  "label": "Time Key",
+                  "helper": "",
+                  "group": "Save Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null,
+                  "parent": "manual",
+                  "condition": "{parent}",
+                  "dynamicType": "text",
+                  "options": null,
+                  "fields": null,
+                  "url": null
+                },
+                {
+                  "name": "tags",
+                  "type": "dynamic",
+                  "label": "Tags",
+                  "helper": "",
+                  "group": "Save Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null,
+                  "parent": "manual",
+                  "condition": "{parent}",
+                  "dynamicType": "multiKeyValue",
+                  "options": null,
+                  "fields": [
+                    {
+                      "name": "tag_key",
+                      "placeholder": "Tag Key",
+                      "validation": null
+                    }
+                  ],
+                  "url": null
+                },
+                {
+                  "name": "fields",
+                  "type": "dynamic",
+                  "label": "Fields",
+                  "helper": "",
+                  "group": "Save Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null,
+                  "parent": "manual",
+                  "condition": "{parent}",
+                  "dynamicType": "multiKeyValue",
+                  "options": null,
+                  "fields": [
+                    {
+                      "name": "field_key",
+                      "placeholder": "Field Key",
+                      "validation": null
+                    }
+                  ],
+                  "url": null
+                },
+                {
+                  "name": "bucket_del",
+                  "type": "text",
+                  "label": "Bucket Name",
+                  "helper": "",
+                  "group": "Delete Parameters",
+                  "value": "influx-bu",
+                  "description": "",
+                  "validation": {
+                    "required": "Required field"
+                  }
+                },
+                {
+                  "name": "from_query_del",
+                  "type": "boolean",
+                  "label": "From query",
+                  "helper": "",
+                  "group": "Delete Parameters",
+                  "value": false,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "measurement_delete",
+                  "type": "dynamic",
+                  "label": "Measurement Name",
+                  "helper": "",
+                  "group": "Delete Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null,
+                  "parent": "from_query_del",
+                  "condition": "!{parent}",
+                  "dynamicType": "text",
+                  "options": null,
+                  "fields": null,
+                  "url": null
+                },
+                {
+                  "name": "start_delete",
+                  "type": "text",
+                  "label": "Start",
+                  "helper": "Define the starting time to consider for deleting your data",
+                  "group": "Delete Parameters",
+                  "value": "1970-01-01T00:00:00Z",
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "stop_delete",
+                  "type": "text",
+                  "label": "Stop",
+                  "helper": "Define the stopping time to consider for deleting your data",
+                  "group": "Delete Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "bucket_read",
+                  "type": "text",
+                  "label": "Bucket Name",
+                  "helper": "",
+                  "group": "Read Parameters",
+                  "value": "influx-bu",
+                  "description": "",
+                  "validation": {
+                    "required": "Required field"
+                  }
+                },
+                {
+                  "name": "measurement_read",
+                  "type": "text",
+                  "label": "Measurement Name",
+                  "helper": "",
+                  "group": "Read Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "start_read",
+                  "type": "text",
+                  "label": "Start",
+                  "helper": "Define the starting time to consider for reading your data",
+                  "group": "Read Parameters",
+                  "value": "1970-01-01T00:00:00Z",
+                  "description": "",
+                  "validation": null
+                },
+                {
+                  "name": "stop_read",
+                  "type": "text",
+                  "label": "Stop",
+                  "helper": "Define the stopping time to consider for reading your data",
+                  "group": "Read Parameters",
+                  "value": null,
+                  "description": "",
+                  "validation": null
+                }
+              ],
+              "click": null,
+              "icon": "RiStackFill",
+              "values": {
+                "comment": "",
+                "alias": "",
+                "debug": true,
+                "bucket_save": "delhi_climate",
+                "manual": true,
+                "bucket_del": "influx-bu",
+                "from_query_del": false,
+                "start_delete": "1970-01-01T00:00:00Z",
+                "stop_delete": "",
+                "bucket_read": "influx-bu",
+                "measurement_read": "",
+                "start_read": "1970-01-01T00:00:00Z",
+                "stop_read": "",
+                "measurement_name": "delhi_climate_prediction",
+                "time": "day",
+                "measurement_delete": "",
+                "fields": [
+                  {
+                    "field_key": "mtemp",
+                    "id": "7c389062-223c-4a19-bff7-20c09f230474"
+                  }
+                ]
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": 3953,
+            "y": 608
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "0777fce8-73f3-471b-83c6-4df227fd45e0",
+          "position": {
+            "x": 3505,
+            "y": 582
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 150,
+          "height": 56,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "name": "Function",
+            "events": null,
+            "description": "### Description\nThe FUNCTION component is used to apply Python code to the input component's. The input can be retrieved using the variable *data*.\n\nTo be able to use data from components of type FUNCTION that are not linked together, the object is set repository.\n\n```python\nrepository.set('value', 5) - this sets the variable value to 5.\nrepository.get('value') - in this way the variable is called value and the value 5 is returned.\n```\n\n### Input\nThe input is used by the component using the variable **data**.\n\n### Output\nThe output coincides with the return of the code defined when the component was created.",
+            "inputs": [
+              {
+                "id": "input",
+                "label": "input",
+                "closed": true
+              }
+            ],
+            "outputs": [
+              {
+                "id": "output",
+                "label": "output"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Common",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "propagate",
+                  "type": "boolean",
+                  "label": "Flush at the end"
+                },
+                {
+                  "name": "notify_warnings",
+                  "type": "boolean",
+                  "label": "Notify warnings"
+                },
+                {
+                  "name": "code",
+                  "type": "code",
+                  "description": "A python function that processes the incoming message. \nVariables available are:\n- **data**: the incoming message\n",
+                  "label": "Code",
+                  "validation": {
+                    "required": "Required field"
+                  },
+                  "fragment": null,
+                  "advanced": false,
+                  "options": null,
+                  "value": null
+                }
+              ],
+              "click": null,
+              "icon": "RiCodeSSlashFill",
+              "values": {
+                "comment": "",
+                "alias": "",
+                "debug": false,
+                "propagate": true,
+                "notify_warnings": true,
+                "code": "l = []\u00a0\nfor day, mtemp in data[\"target\"].items():\n\u00a0 l.append(dict(date=day, meantemp=mtemp))\u00a0\nreturn l"
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "__class__": "Node"
         }
       ],
       "edges": [
@@ -6014,6 +6435,48 @@
         {
           "id": "reactflow__edge-37a3a972-211b-430c-8cb0-05f59fd455d8output-6394cb19-fe7e-4047-8396-66ea072cec48predict",
           "source": "37a3a972-211b-430c-8cb0-05f59fd455d8",
+          "sourceHandle": "output",
+          "target": "6394cb19-fe7e-4047-8396-66ea072cec48",
+          "targetHandle": "predict",
+          "data": {
+            "startColor": "#D770AD",
+            "stopColor": "#888"
+          },
+          "selected": false,
+          "dragging": false,
+          "__class__": "Edge"
+        },
+        {
+          "id": "reactflow__edge-6394cb19-fe7e-4047-8396-66ea072cec48predict-0777fce8-73f3-471b-83c6-4df227fd45e0input",
+          "source": "6394cb19-fe7e-4047-8396-66ea072cec48",
+          "sourceHandle": "predict",
+          "target": "0777fce8-73f3-471b-83c6-4df227fd45e0",
+          "targetHandle": "input",
+          "data": {
+            "startColor": "#888",
+            "stopColor": "#D770AD"
+          },
+          "selected": false,
+          "dragging": false,
+          "__class__": "Edge"
+        },
+        {
+          "id": "reactflow__edge-0777fce8-73f3-471b-83c6-4df227fd45e0output-265ec20c-e6d2-402e-a540-a8e4386e9ebdsave",
+          "source": "0777fce8-73f3-471b-83c6-4df227fd45e0",
+          "sourceHandle": "output",
+          "target": "265ec20c-e6d2-402e-a540-a8e4386e9ebd",
+          "targetHandle": "save",
+          "data": {
+            "startColor": "#D770AD",
+            "stopColor": "#888"
+          },
+          "selected": false,
+          "dragging": false,
+          "__class__": "Edge"
+        },
+        {
+          "id": "reactflow__edge-8cc5c983-a99a-4e9f-ab94-b88c45255bffoutput-6394cb19-fe7e-4047-8396-66ea072cec48predict",
+          "source": "8cc5c983-a99a-4e9f-ab94-b88c45255bff",
           "sourceHandle": "output",
           "target": "6394cb19-fe7e-4047-8396-66ea072cec48",
           "targetHandle": "predict",
