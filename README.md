@@ -6,10 +6,6 @@ This LOKO AI projects contains a workflow which allows to handle time series dat
 In this demo we used a public dataset, downloaded from [Kaggle](https://www.kaggle.com/datasets/sumanthvrao/daily-climate-time-series-data?resource=download), concerning weather data in Delhi, particularly the daily average temperature. There are two csv files, which are used for the train and test of the time-series model. These two documents will be ingested in a InfluxDB database, through the _influxdb-grafana-ext_ extension, which can also be used to query, plot and dashboard creation. This extension offers a direct access to InfluxDB and Grafana GUIs. The ingested data will then be used to train an Arima model, using the _loko-time-series_ extension. The first step is the creation of the time series predictor itself. Afterwards it's possible to fit the model, and eventually use the trained model to predict next _n_ days average temperature and evaluate the model performances.
 
 
-## Data ingestion
-
-
-
 
 
 # :mag_right: How make it work?
